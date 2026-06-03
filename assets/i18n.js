@@ -956,5 +956,5 @@
     }
   });
 
-  window.i18n = { setLang: setLang, getLang: getLang };
+  window.i18n = { setLang: setLang, getLang: getLang, applyLang: applyLang };
 }());
