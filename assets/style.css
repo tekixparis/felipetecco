@@ -697,14 +697,14 @@ p {
 }
 
 .profil-photo {
-  width: 160px;
-  height: 160px;
-  border-radius: 50%;
+  width: 100%;
+  max-width: 260px;
+  border-radius: 8px;
   object-fit: cover;
   object-position: center top;
   display: block;
   margin: 0 auto 1.75rem;
-  border: 3px solid var(--color-gray-mid);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.10);
 }
 
 .profil-photo-placeholder {
