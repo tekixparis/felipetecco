@@ -169,12 +169,25 @@
   /* ----------------------------------------------------------
      INIT
      ---------------------------------------------------------- */
+  function initHeroAnimations() {
+    var hero = document.querySelector('.hero');
+    if (!hero) return;
+    /* rAF ensures the browser has painted the initial state (opacity:0)
+       before we flip the class, so the transition is always visible */
+    requestAnimationFrame(function () {
+      requestAnimationFrame(function () {
+        hero.classList.add('hero--ready');
+      });
+    });
+  }
+
   document.addEventListener('DOMContentLoaded', function () {
     setActiveNav();
     initDropdowns();
     initHamburger();
     initAccordions();
     initReveal();
+    initHeroAnimations();
   });
 
 }());
