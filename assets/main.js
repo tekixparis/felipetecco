@@ -155,6 +155,15 @@
     initDropdowns();
     initHamburger();
     initAccordions();
+
+    if (typeof AOS !== 'undefined') {
+      AOS.init({
+        duration: 600,
+        easing: 'ease-out-cubic',
+        once: true,
+        offset: 60
+      });
+    }
   });
 
 }());
