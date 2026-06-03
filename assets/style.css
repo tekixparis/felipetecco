@@ -1,6 +1,6 @@
 /* ============================================================
    PORTFOLIO — Felipe Tecco
-   BTS Techniques de Commercialisation
+   BUT Techniques de Commercialisation
    ============================================================ */
 
 /* ------------------------------------------------------------
@@ -683,6 +683,17 @@ p {
 .profil-aside {
   position: sticky;
   top: calc(var(--nav-height) + 2rem);
+}
+
+.profil-photo {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+  margin: 0 auto 1.75rem;
+  border: 3px solid var(--color-gray-mid);
 }
 
 .profil-photo-placeholder {
