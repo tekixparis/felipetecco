@@ -16,43 +16,48 @@
     <div class="nav__inner">
       <a href="index.html" class="nav__brand">Felipe <span>Tecco</span></a>
       <ul class="nav__links">
-        <li><a href="index.html" class="nav__link">Accueil</a></li>
-        <li><a href="profil.html" class="nav__link">Mon Parcours</a></li>
+        <li><a href="index.html" class="nav__link" data-i18n="nav_home">Accueil</a></li>
+        <li><a href="profil.html" class="nav__link" data-i18n="nav_parcours">Mon Parcours</a></li>
         <li class="nav__dropdown">
-          <span class="nav__dropdown-toggle" tabindex="0">Compétences <span class="chevron"></span></span>
+          <span class="nav__dropdown-toggle" tabindex="0"><span data-i18n="nav_competences">Compétences</span> <span class="chevron"></span></span>
           <ul class="nav__dropdown-menu">
-            <li><a href="competence1.html" class="nav__dropdown-item">Compétence 1 <span class="item-sub">Marketing</span></a></li>
-            <li><a href="competence2.html" class="nav__dropdown-item">Compétence 2 <span class="item-sub">Vente</span></a></li>
-            <li><a href="competence3.html" class="nav__dropdown-item">Compétence 3 <span class="item-sub">Communication</span></a></li>
-            <li><a href="competence4.html" class="nav__dropdown-item">Compétence 4 <span class="item-sub">Business Développement</span></a></li>
-            <li><a href="competence5.html" class="nav__dropdown-item">Compétence 5 <span class="item-sub">Relation Client</span></a></li>
+            <li><a href="competence1.html" class="nav__dropdown-item"><span data-i18n="nav_comp1">Compétence 1</span> <span class="item-sub" data-i18n="nav_comp1sub">Marketing</span></a></li>
+            <li><a href="competence2.html" class="nav__dropdown-item"><span data-i18n="nav_comp2">Compétence 2</span> <span class="item-sub" data-i18n="nav_comp2sub">Vente</span></a></li>
+            <li><a href="competence3.html" class="nav__dropdown-item"><span data-i18n="nav_comp3">Compétence 3</span> <span class="item-sub" data-i18n="nav_comp3sub">Communication</span></a></li>
+            <li><a href="competence4.html" class="nav__dropdown-item"><span data-i18n="nav_comp4">Compétence 4</span> <span class="item-sub" data-i18n="nav_comp4sub">Business Développement</span></a></li>
+            <li><a href="competence5.html" class="nav__dropdown-item"><span data-i18n="nav_comp5">Compétence 5</span> <span class="item-sub" data-i18n="nav_comp5sub">Relation Client</span></a></li>
           </ul>
         </li>
-        <li><a href="contact.html" class="nav__link">Contact</a></li>
+        <li><a href="contact.html" class="nav__link" data-i18n="nav_contact">Contact</a></li>
       </ul>
-      <button class="nav__hamburger" aria-label="Ouvrir le menu"><span></span><span></span><span></span></button>
+      <div class="lang-switcher">
+        <button class="lang-btn" data-lang="fr">FR</button>
+        <button class="lang-btn" data-lang="es">ES</button>
+        <button class="lang-btn" data-lang="en">EN</button>
+      </div>
+      <button class="nav__hamburger" data-i18n-aria="nav_hamburger" aria-label="Ouvrir le menu"><span></span><span></span><span></span></button>
     </div>
     <div class="nav__mobile">
-      <a href="index.html" class="nav__link">Accueil</a>
-      <a href="profil.html" class="nav__link">Mon Parcours</a>
-      <span class="nav__dropdown-toggle">Compétences <span class="chevron"></span></span>
+      <a href="index.html" class="nav__link" data-i18n="nav_home">Accueil</a>
+      <a href="profil.html" class="nav__link" data-i18n="nav_parcours">Mon Parcours</a>
+      <span class="nav__dropdown-toggle"><span data-i18n="nav_competences">Compétences</span> <span class="chevron"></span></span>
       <ul class="nav__dropdown-menu">
-        <li><a href="competence1.html" class="nav__dropdown-item">Compétence 1 — Marketing</a></li>
-        <li><a href="competence2.html" class="nav__dropdown-item">Compétence 2 — Vente</a></li>
-        <li><a href="competence3.html" class="nav__dropdown-item">Compétence 3 — Communication</a></li>
-        <li><a href="competence4.html" class="nav__dropdown-item">Compétence 4 — Business Développement</a></li>
-        <li><a href="competence5.html" class="nav__dropdown-item">Compétence 5 — Relation Client</a></li>
+        <li><a href="competence1.html" class="nav__dropdown-item" data-i18n="nav_mob_comp1">Compétence 1 — Marketing</a></li>
+        <li><a href="competence2.html" class="nav__dropdown-item" data-i18n="nav_mob_comp2">Compétence 2 — Vente</a></li>
+        <li><a href="competence3.html" class="nav__dropdown-item" data-i18n="nav_mob_comp3">Compétence 3 — Communication</a></li>
+        <li><a href="competence4.html" class="nav__dropdown-item" data-i18n="nav_mob_comp4">Compétence 4 — Business Développement</a></li>
+        <li><a href="competence5.html" class="nav__dropdown-item" data-i18n="nav_mob_comp5">Compétence 5 — Relation Client</a></li>
       </ul>
-      <a href="contact.html" class="nav__link">Contact</a>
+      <a href="contact.html" class="nav__link" data-i18n="nav_contact">Contact</a>
     </div>
   </nav>
 
   <!-- PAGE HERO -->
   <div class="page-hero">
     <div class="container">
-      <span class="page-hero__eyebrow">Compétence 2</span>
-      <h1 class="page-hero__title">Vente</h1>
-      <p class="page-hero__subtitle">Mener un entretien de vente simple</p>
+      <span class="page-hero__eyebrow" data-i18n="comp2_eyebrow">Compétence 2</span>
+      <h1 class="page-hero__title" data-i18n="comp2_title">Vente</h1>
+      <p class="page-hero__subtitle" data-i18n="comp2_subtitle">Mener un entretien de vente simple</p>
     </div>
   </div>
 
@@ -63,9 +68,9 @@
       <!-- SC1 -->
       <div class="accordion">
         <button class="accordion-header">
-          <span class="accordion-header__title">
-            Convaincre en exprimant avec empathie l'offre en termes d'avantages personnalisés
-            <span class="accordion-header__sub">Sous-compétence 1</span>
+                    <span class="accordion-header__title">
+            <span data-i18n="comp2_sc1">Convaincre en exprimant avec empathie l'offre en termes d'avantages personnalisés</span>
+            <span class="accordion-header__sub" data-i18n="sc_label_1">Sous-compétence 1</span>
           </span>
           <span class="icon">+</span>
         </button>
@@ -74,25 +79,25 @@
             <div class="card">
               <img class="card__image" src="https://static.wixstatic.com/media/6a7b03_f08b0a8e646148a9957cae258eb24e6c~mv2.png/v1/fill/w_600,h_338,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/6a7b03_f08b0a8e646148a9957cae258eb24e6c~mv2.png" alt="Entretien de vente Ruckfield" loading="lazy" />
               <div class="card__body">
-                <h3 class="card__title">Entretien de vente – Cas Ruckfield</h3>
-                <p class="card__desc">Dans le cadre d'une simulation d'entretien de vente, je devais convaincre un distributeur de référencer la marque Ruckfield en adaptant mon discours à ses besoins. J'ai identifié les attentes du client professionnel (rentabilité, positionnement de gamme, adéquation avec sa clientèle) et construit une argumentation centrée sur les avantages personnalisés. Ce projet m'a permis de développer ma capacité à convaincre en personnalisant mon discours commercial en fonction des besoins du client.</p>
-                <div class="card__footer"><a href="https://www.canva.com/design/DAG_0aPJlf0/pf_E5kAipu8W-6AE3AftUw/edit" target="_blank" rel="noopener" class="btn btn--ghost btn--sm">Voir le projet</a></div>
+                <h3 class="card__title" data-i18n="comp2_sc1_c1_title">Entretien de vente – Cas Ruckfield</h3>
+                <p class="card__desc" data-i18n="comp2_sc1_c1_desc">Dans le cadre d'une simulation d'entretien de vente, je devais convaincre un distributeur de référencer la marque Ruckfield en adaptant mon discours à ses besoins. J'ai identifié les attentes du client professionnel (rentabilité, positionnement de gamme, adéquation avec sa clientèle) et construit une argumentation centrée sur les avantages personnalisés. Ce projet m'a permis de développer ma capacité à convaincre en personnalisant mon discours commercial en fonction des besoins du client.</p>
+                <div class="card__footer"><a href="https://www.canva.com/design/DAG_0aPJlf0/pf_E5kAipu8W-6AE3AftUw/edit" target="_blank" rel="noopener" class="btn btn--ghost btn--sm" data-i18n="view_project">Voir le projet</a></div>
               </div>
             </div>
             <div class="card">
               <img class="card__image" src="https://static.wixstatic.com/media/6a7b03_b35655902e934884955ff33f187bc012~mv2.png/v1/fill/w_600,h_336,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/6a7b03_b35655902e934884955ff33f187bc012~mv2.png" alt="Part'Âge pitch seniors" loading="lazy" />
               <div class="card__body">
-                <h3 class="card__title">Part'Âge – Pitch de l'offre senior</h3>
-                <p class="card__desc">Dans le cadre du projet Part'Âge, nous avons présenté notre offre à travers un pitch structuré visant à convaincre investisseurs et partenaires. Nous avons mis en avant les bénéfices concrets pour les seniors (lien social, lutte contre l'isolement, simplicité d'usage) avec une approche empathique centrée sur l'utilisateur. Ce projet m'a permis de travailler ma capacité à valoriser une offre en fonction des bénéfices personnalisés pour une cible spécifique.</p>
-                <div class="card__footer"><a href="https://www.canva.com/design/DAG-NcXLlII/H0peiGUd16A9NmRMWsntsw/edit" target="_blank" rel="noopener" class="btn btn--ghost btn--sm">Voir le projet</a></div>
+                <h3 class="card__title" data-i18n="comp2_sc1_c2_title">Part'Âge – Pitch de l'offre senior</h3>
+                <p class="card__desc" data-i18n="comp2_sc1_c2_desc">Dans le cadre du projet Part'Âge, nous avons présenté notre offre à travers un pitch structuré visant à convaincre investisseurs et partenaires. Nous avons mis en avant les bénéfices concrets pour les seniors (lien social, lutte contre l'isolement, simplicité d'usage) avec une approche empathique centrée sur l'utilisateur. Ce projet m'a permis de travailler ma capacité à valoriser une offre en fonction des bénéfices personnalisés pour une cible spécifique.</p>
+                <div class="card__footer"><a href="https://www.canva.com/design/DAG-NcXLlII/H0peiGUd16A9NmRMWsntsw/edit" target="_blank" rel="noopener" class="btn btn--ghost btn--sm" data-i18n="view_project">Voir le projet</a></div>
               </div>
             </div>
             <div class="card">
               <img class="card__image" src="https://static.wixstatic.com/media/6a7b03_e31cf4eb6a564449a3b2a445180b0994~mv2.png/v1/fill/w_600,h_335,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/6a7b03_e31cf4eb6a564449a3b2a445180b0994~mv2.png" alt="Michel et Augustin argumentation produit" loading="lazy" />
               <div class="card__body">
-                <h3 class="card__title">Michel & Augustin – Argumentation produit</h3>
-                <p class="card__desc">Dans le projet Michel & Augustin, nous avons présenté une nouvelle offre produit en mettant en avant ses bénéfices consommateurs : plaisir, qualité et proximité avec la marque. L'objectif était de traduire les caractéristiques produit en avantages concrets tout en respectant l'identité de marque. Ce projet m'a permis de renforcer ma maîtrise de l'argumentation commerciale empathique et personnalisée.</p>
-                <div class="card__footer"><a href="https://www.canva.com/design/DAHAvshxKjs/Dt5GbH0t8UQNN6Q5ZSJFBg/edit" target="_blank" rel="noopener" class="btn btn--ghost btn--sm">Voir le projet</a></div>
+                <h3 class="card__title" data-i18n="comp2_sc1_c3_title">Michel & Augustin – Argumentation produit</h3>
+                <p class="card__desc" data-i18n="comp2_sc1_c3_desc">Dans le projet Michel & Augustin, nous avons présenté une nouvelle offre produit en mettant en avant ses bénéfices consommateurs : plaisir, qualité et proximité avec la marque. L'objectif était de traduire les caractéristiques produit en avantages concrets tout en respectant l'identité de marque. Ce projet m'a permis de renforcer ma maîtrise de l'argumentation commerciale empathique et personnalisée.</p>
+                <div class="card__footer"><a href="https://www.canva.com/design/DAHAvshxKjs/Dt5GbH0t8UQNN6Q5ZSJFBg/edit" target="_blank" rel="noopener" class="btn btn--ghost btn--sm" data-i18n="view_project">Voir le projet</a></div>
               </div>
             </div>
           </div>
@@ -102,9 +107,9 @@
       <!-- SC2 -->
       <div class="accordion">
         <button class="accordion-header">
-          <span class="accordion-header__title">
-            Négocier le prix : défendre, valoriser l'offre en percevant les stratégies d'achat
-            <span class="accordion-header__sub">Sous-compétence 2</span>
+                    <span class="accordion-header__title">
+            <span data-i18n="comp2_sc2">Négocier le prix : défendre, valoriser l'offre en percevant les stratégies d'achat</span>
+            <span class="accordion-header__sub" data-i18n="sc_label_2">Sous-compétence 2</span>
           </span>
           <span class="icon">+</span>
         </button>
@@ -113,25 +118,25 @@
             <div class="card">
               <img class="card__image" src="https://static.wixstatic.com/media/6a7b03_84706fd5e1c8440da299b9dbf30fb870~mv2.png/v1/fill/w_600,h_337,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/6a7b03_84706fd5e1c8440da299b9dbf30fb870~mv2.png" alt="Ruckfield négociation prix" loading="lazy" />
               <div class="card__body">
-                <h3 class="card__title">Entretien de vente – Cas Ruckfield</h3>
-                <p class="card__desc">J'ai dû défendre la valeur de l'offre Ruckfield face aux objections prix d'un distributeur en anticipant ses logiques d'achat (marge, rotation des stocks, attractivité de gamme). Ce projet m'a permis de développer une posture de négociation commerciale en valorisant une offre face aux objections prix.</p>
-                <div class="card__footer"><a href="https://www.canva.com/design/DAG_0aPJlf0/pf_E5kAipu8W-6AE3AftUw/edit" target="_blank" rel="noopener" class="btn btn--ghost btn--sm">Voir le projet</a></div>
+                <h3 class="card__title" data-i18n="comp2_sc2_c1_title">Entretien de vente – Cas Ruckfield</h3>
+                <p class="card__desc" data-i18n="comp2_sc2_c1_desc">J'ai dû défendre la valeur de l'offre Ruckfield face aux objections prix d'un distributeur en anticipant ses logiques d'achat (marge, rotation des stocks, attractivité de gamme). Ce projet m'a permis de développer une posture de négociation commerciale en valorisant une offre face aux objections prix.</p>
+                <div class="card__footer"><a href="https://www.canva.com/design/DAG_0aPJlf0/pf_E5kAipu8W-6AE3AftUw/edit" target="_blank" rel="noopener" class="btn btn--ghost btn--sm" data-i18n="view_project">Voir le projet</a></div>
               </div>
             </div>
             <div class="card">
               <img class="card__image" src="https://static.wixstatic.com/media/6a7b03_178ef9b6c27d48528710e90050418cb9~mv2.png/v1/fill/w_600,h_338,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/6a7b03_178ef9b6c27d48528710e90050418cb9~mv2.png" alt="Michel et Augustin politique de prix" loading="lazy" />
               <div class="card__body">
-                <h3 class="card__title">Michel & Augustin – Positionnement et politique de prix</h3>
-                <p class="card__desc">Nous avons analysé comment Michel & Augustin justifie ses prix par la qualité, l'identité de marque et l'expérience client, tout en restant compétitif. Ce projet m'a permis de comprendre comment construire la perception de valeur pour soutenir un niveau de prix dans un environnement concurrentiel.</p>
-                <div class="card__footer"><a href="https://www.canva.com/design/DAHAvshxKjs/Dt5GbH0t8UQNN6Q5ZSJFBg/edit" target="_blank" rel="noopener" class="btn btn--ghost btn--sm">Voir le projet</a></div>
+                <h3 class="card__title" data-i18n="comp2_sc2_c2_title">Michel & Augustin – Positionnement et politique de prix</h3>
+                <p class="card__desc" data-i18n="comp2_sc2_c2_desc">Nous avons analysé comment Michel & Augustin justifie ses prix par la qualité, l'identité de marque et l'expérience client, tout en restant compétitif. Ce projet m'a permis de comprendre comment construire la perception de valeur pour soutenir un niveau de prix dans un environnement concurrentiel.</p>
+                <div class="card__footer"><a href="https://www.canva.com/design/DAHAvshxKjs/Dt5GbH0t8UQNN6Q5ZSJFBg/edit" target="_blank" rel="noopener" class="btn btn--ghost btn--sm" data-i18n="view_project">Voir le projet</a></div>
               </div>
             </div>
             <div class="card">
               <img class="card__image" src="https://static.wixstatic.com/media/6a7b03_8bcf8d8ea0e94f99b6bacbf6d7b6c59e~mv2.png/v1/fill/w_600,h_337,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/6a7b03_8bcf8d8ea0e94f99b6bacbf6d7b6c59e~mv2.png" alt="Peugeot B2B négociation" loading="lazy" />
               <div class="card__body">
-                <h3 class="card__title">Peugeot B2B – Stratégies de négociation commerciale</h3>
-                <p class="card__desc">Nous avons analysé les mécanismes de négociation dans le secteur automobile professionnel : adaptation des prix selon volumes, contrats et stratégies d'optimisation des accords. Ce projet m'a permis de comprendre les logiques de négociation dans un environnement B2B complexe où le prix est un élément flexible et stratégique.</p>
-                <div class="card__footer"><a href="https://www.canva.com/design/DAHA2-D0y5A/LdI1qPLMAtLXOkcrIr-4fg/edit" target="_blank" rel="noopener" class="btn btn--ghost btn--sm">Voir le projet</a></div>
+                <h3 class="card__title" data-i18n="comp2_sc2_c3_title">Peugeot B2B – Stratégies de négociation commerciale</h3>
+                <p class="card__desc" data-i18n="comp2_sc2_c3_desc">Nous avons analysé les mécanismes de négociation dans le secteur automobile professionnel : adaptation des prix selon volumes, contrats et stratégies d'optimisation des accords. Ce projet m'a permis de comprendre les logiques de négociation dans un environnement B2B complexe où le prix est un élément flexible et stratégique.</p>
+                <div class="card__footer"><a href="https://www.canva.com/design/DAHA2-D0y5A/LdI1qPLMAtLXOkcrIr-4fg/edit" target="_blank" rel="noopener" class="btn btn--ghost btn--sm" data-i18n="view_project">Voir le projet</a></div>
               </div>
             </div>
           </div>
@@ -141,9 +146,9 @@
       <!-- SC3 -->
       <div class="accordion">
         <button class="accordion-header">
-          <span class="accordion-header__title">
-            Maîtriser les éléments juridiques et comptables de l'offre
-            <span class="accordion-header__sub">Sous-compétence 3</span>
+                    <span class="accordion-header__title">
+            <span data-i18n="comp2_sc3">Maîtriser les éléments juridiques et comptables de l'offre</span>
+            <span class="accordion-header__sub" data-i18n="sc_label_3">Sous-compétence 3</span>
           </span>
           <span class="icon">+</span>
         </button>
@@ -152,25 +157,25 @@
             <div class="card">
               <img class="card__image" src="https://static.wixstatic.com/media/6a7b03_a5f6bdf87a364a6e90618d46e02596a4~mv2.png/v1/fill/w_600,h_336,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/6a7b03_a5f6bdf87a364a6e90618d46e02596a4~mv2.png" alt="Ruckfield éléments juridiques" loading="lazy" />
               <div class="card__body">
-                <h3 class="card__title">Entretien de vente – Cas Ruckfield</h3>
-                <p class="card__desc">Dans la simulation Ruckfield, nous avons intégré les contraintes liées au référencement produit et aux conditions de distribution avec un partenaire professionnel, approchant ainsi les implications contractuelles d'une mise en marché. Ce projet m'a permis de comprendre indirectement les enjeux juridiques et commerciaux d'une relation de distribution.</p>
-                <div class="card__footer"><a href="https://www.canva.com/design/DAG_0aPJlf0/pf_E5kAipu8W-6AE3AftUw/edit" target="_blank" rel="noopener" class="btn btn--ghost btn--sm">Voir le projet</a></div>
+                <h3 class="card__title" data-i18n="comp2_sc3_c1_title">Entretien de vente – Cas Ruckfield</h3>
+                <p class="card__desc" data-i18n="comp2_sc3_c1_desc">Dans la simulation Ruckfield, nous avons intégré les contraintes liées au référencement produit et aux conditions de distribution avec un partenaire professionnel, approchant ainsi les implications contractuelles d'une mise en marché. Ce projet m'a permis de comprendre indirectement les enjeux juridiques et commerciaux d'une relation de distribution.</p>
+                <div class="card__footer"><a href="https://www.canva.com/design/DAG_0aPJlf0/pf_E5kAipu8W-6AE3AftUw/edit" target="_blank" rel="noopener" class="btn btn--ghost btn--sm" data-i18n="view_project">Voir le projet</a></div>
               </div>
             </div>
             <div class="card">
               <img class="card__image" src="https://static.wixstatic.com/media/6a7b03_980ed9171bf4485b9b6f7074ac657c37~mv2.png/v1/fill/w_600,h_334,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/6a7b03_980ed9171bf4485b9b6f7074ac657c37~mv2.png" alt="Schneider Electric contractualisation B2B" loading="lazy" />
               <div class="card__body">
-                <h3 class="card__title">Marketing B2B – Schneider Electric</h3>
-                <p class="card__desc">Dans l'analyse du marché de Schneider Electric, nous avons étudié les relations commerciales B2B à travers les logiques de contractualisation, de chaîne de valeur et d'organisation des échanges industriels. Ce projet m'a permis de mieux comprendre le cadre structurant des échanges commerciaux dans une grande entreprise industrielle.</p>
-                <div class="card__footer"><a href="https://www.canva.com/design/DAG497lMsws/YotBS5uQXIpExZmN1yrBUA/edit" target="_blank" rel="noopener" class="btn btn--ghost btn--sm">Voir le projet</a></div>
+                <h3 class="card__title" data-i18n="comp2_sc3_c2_title">Marketing B2B – Schneider Electric</h3>
+                <p class="card__desc" data-i18n="comp2_sc3_c2_desc">Dans l'analyse du marché de Schneider Electric, nous avons étudié les relations commerciales B2B à travers les logiques de contractualisation, de chaîne de valeur et d'organisation des échanges industriels. Ce projet m'a permis de mieux comprendre le cadre structurant des échanges commerciaux dans une grande entreprise industrielle.</p>
+                <div class="card__footer"><a href="https://www.canva.com/design/DAG497lMsws/YotBS5uQXIpExZmN1yrBUA/edit" target="_blank" rel="noopener" class="btn btn--ghost btn--sm" data-i18n="view_project">Voir le projet</a></div>
               </div>
             </div>
             <div class="card">
               <img class="card__image" src="https://static.wixstatic.com/media/6a7b03_2965ee86f1c14d01b47166d172ef2926~mv2.png/v1/fill/w_600,h_336,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/6a7b03_2965ee86f1c14d01b47166d172ef2926~mv2.png" alt="Peugeot B2B aspects contractuels" loading="lazy" />
               <div class="card__body">
-                <h3 class="card__title">Marketing B2B – Peugeot</h3>
-                <p class="card__desc">Dans l'étude Peugeot B2B, nous avons analysé les spécificités contractuelles du secteur automobile professionnel, notamment les modalités de négociation et les conditions d'achat en volume dans un cadre fortement encadré. Ce projet m'a permis d'approcher les aspects économiques et organisationnels d'une offre dans un contexte B2B.</p>
-                <div class="card__footer"><a href="https://www.canva.com/design/DAHA2-D0y5A/LdI1qPLMAtLXOkcrIr-4fg/edit" target="_blank" rel="noopener" class="btn btn--ghost btn--sm">Voir le projet</a></div>
+                <h3 class="card__title" data-i18n="comp2_sc3_c3_title">Marketing B2B – Peugeot</h3>
+                <p class="card__desc" data-i18n="comp2_sc3_c3_desc">Dans l'étude Peugeot B2B, nous avons analysé les spécificités contractuelles du secteur automobile professionnel, notamment les modalités de négociation et les conditions d'achat en volume dans un cadre fortement encadré. Ce projet m'a permis d'approcher les aspects économiques et organisationnels d'une offre dans un contexte B2B.</p>
+                <div class="card__footer"><a href="https://www.canva.com/design/DAHA2-D0y5A/LdI1qPLMAtLXOkcrIr-4fg/edit" target="_blank" rel="noopener" class="btn btn--ghost btn--sm" data-i18n="view_project">Voir le projet</a></div>
               </div>
             </div>
           </div>
@@ -180,9 +185,9 @@
       <!-- SC4 -->
       <div class="accordion">
         <button class="accordion-header">
-          <span class="accordion-header__title">
-            Utiliser les OAV à bon escient pour convaincre
-            <span class="accordion-header__sub">Sous-compétence 4</span>
+                    <span class="accordion-header__title">
+            <span data-i18n="comp2_sc4">Utiliser les OAV à bon escient pour convaincre</span>
+            <span class="accordion-header__sub" data-i18n="sc_label_4">Sous-compétence 4</span>
           </span>
           <span class="icon">+</span>
         </button>
@@ -191,25 +196,25 @@
             <div class="card">
               <img class="card__image" src="https://static.wixstatic.com/media/6a7b03_984442625aba48558c0812a96db3eae8~mv2.png/v1/fill/w_600,h_337,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/6a7b03_984442625aba48558c0812a96db3eae8~mv2.png" alt="Ruckfield OAV" loading="lazy" />
               <div class="card__body">
-                <h3 class="card__title">Entretien de vente – Cas Ruckfield</h3>
-                <p class="card__desc">J'ai structuré mon argumentation commerciale à l'aide d'un support de préparation organisant arguments produits, bénéfices clients et réponses aux objections. Ce projet m'a permis de comprendre l'importance des outils d'aide à la vente pour structurer un entretien et renforcer la persuasion commerciale.</p>
-                <div class="card__footer"><a href="https://www.canva.com/design/DAG_0aPJlf0/pf_E5kAipu8W-6AE3AftUw/edit" target="_blank" rel="noopener" class="btn btn--ghost btn--sm">Voir le projet</a></div>
+                <h3 class="card__title" data-i18n="comp2_sc4_c1_title">Entretien de vente – Cas Ruckfield</h3>
+                <p class="card__desc" data-i18n="comp2_sc4_c1_desc">J'ai structuré mon argumentation commerciale à l'aide d'un support de préparation organisant arguments produits, bénéfices clients et réponses aux objections. Ce projet m'a permis de comprendre l'importance des outils d'aide à la vente pour structurer un entretien et renforcer la persuasion commerciale.</p>
+                <div class="card__footer"><a href="https://www.canva.com/design/DAG_0aPJlf0/pf_E5kAipu8W-6AE3AftUw/edit" target="_blank" rel="noopener" class="btn btn--ghost btn--sm" data-i18n="view_project">Voir le projet</a></div>
               </div>
             </div>
             <div class="card">
               <img class="card__image" src="https://static.wixstatic.com/media/6a7b03_18237334a32342be89f6ad693e4a835e~mv2.png/v1/fill/w_600,h_309,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/6a7b03_18237334a32342be89f6ad693e4a835e~mv2.png" alt="Tableau de bord commercial Excel" loading="lazy" />
               <div class="card__body">
-                <h3 class="card__title">Tableau de bord commercial Excel</h3>
-                <p class="card__desc">Nous avons conçu un tableau de bord de suivi des performances commerciales sous Excel (CA, KPI, activité) permettant de centraliser et visualiser les données pour aider à la prise de décision. Ce projet m'a permis de développer ma maîtrise des outils d'aide à la décision et à la structuration de l'information commerciale.</p>
+                <h3 class="card__title" data-i18n="comp2_sc4_c2_title">Tableau de bord commercial Excel</h3>
+                <p class="card__desc" data-i18n="comp2_sc4_c2_desc">Nous avons conçu un tableau de bord de suivi des performances commerciales sous Excel (CA, KPI, activité) permettant de centraliser et visualiser les données pour aider à la prise de décision. Ce projet m'a permis de développer ma maîtrise des outils d'aide à la décision et à la structuration de l'information commerciale.</p>
                 
               </div>
             </div>
             <div class="card">
               <img class="card__image" src="https://static.wixstatic.com/media/6a7b03_2d13b7c0e1c84726bc148b6e9b32dc58~mv2.png/v1/fill/w_600,h_337,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/6a7b03_2d13b7c0e1c84726bc148b6e9b32dc58~mv2.png" alt="Michel et Augustin présentation stratégique" loading="lazy" />
               <div class="card__body">
-                <h3 class="card__title">Michel & Augustin – Présentation stratégique</h3>
-                <p class="card__desc">Dans le projet Michel & Augustin, nous avons utilisé des supports slides structurés pour argumenter nos choix stratégiques (positionnement, mix, innovation produit) lors de la présentation orale. Ce projet m'a permis de comprendre l'intérêt des supports d'argumentation dans la construction d'un discours commercial efficace.</p>
-                <div class="card__footer"><a href="https://www.canva.com/design/DAHAvshxKjs/Dt5GbH0t8UQNN6Q5ZSJFBg/edit" target="_blank" rel="noopener" class="btn btn--ghost btn--sm">Voir le projet</a></div>
+                <h3 class="card__title" data-i18n="comp2_sc4_c3_title">Michel & Augustin – Présentation stratégique</h3>
+                <p class="card__desc" data-i18n="comp2_sc4_c3_desc">Dans le projet Michel & Augustin, nous avons utilisé des supports slides structurés pour argumenter nos choix stratégiques (positionnement, mix, innovation produit) lors de la présentation orale. Ce projet m'a permis de comprendre l'intérêt des supports d'argumentation dans la construction d'un discours commercial efficace.</p>
+                <div class="card__footer"><a href="https://www.canva.com/design/DAHAvshxKjs/Dt5GbH0t8UQNN6Q5ZSJFBg/edit" target="_blank" rel="noopener" class="btn btn--ghost btn--sm" data-i18n="view_project">Voir le projet</a></div>
               </div>
             </div>
           </div>
@@ -219,9 +224,9 @@
       <!-- SC5 -->
       <div class="accordion">
         <button class="accordion-header">
-          <span class="accordion-header__title">
-            Organiser le suivi des résultats pour gagner en performance au sein de l'équipe commerciale
-            <span class="accordion-header__sub">Sous-compétence 5</span>
+                    <span class="accordion-header__title">
+            <span data-i18n="comp2_sc5">Organiser le suivi des résultats pour gagner en performance au sein de l'équipe commerciale</span>
+            <span class="accordion-header__sub" data-i18n="sc_label_5">Sous-compétence 5</span>
           </span>
           <span class="icon">+</span>
         </button>
@@ -230,25 +235,25 @@
             <div class="card">
               <img class="card__image" src="https://static.wixstatic.com/media/6a7b03_3cbd119817ac4d4b8a09edd24a2433b6~mv2.png/v1/fill/w_600,h_212,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/6a7b03_3cbd119817ac4d4b8a09edd24a2433b6~mv2.png" alt="Tableau de bord commercial Excel suivi" loading="lazy" />
               <div class="card__body">
-                <h3 class="card__title">Tableau de bord commercial Excel</h3>
-                <p class="card__desc">Nous avons conçu un outil de suivi continu de la performance commerciale (CA, KPI, évolution des ventes) permettant d'identifier les axes d'amélioration et de piloter l'activité en équipe. Ce projet m'a permis de comprendre l'importance du suivi des performances pour piloter efficacement une activité commerciale et améliorer les résultats collectifs.</p>
+                <h3 class="card__title" data-i18n="comp2_sc5_c1_title">Tableau de bord commercial Excel</h3>
+                <p class="card__desc" data-i18n="comp2_sc5_c1_desc">Nous avons conçu un outil de suivi continu de la performance commerciale (CA, KPI, évolution des ventes) permettant d'identifier les axes d'amélioration et de piloter l'activité en équipe. Ce projet m'a permis de comprendre l'importance du suivi des performances pour piloter efficacement une activité commerciale et améliorer les résultats collectifs.</p>
                 
               </div>
             </div>
             <div class="card">
               <img class="card__image" src="https://static.wixstatic.com/media/6a7b03_a86fd258a9e741dfb945d5b03359930d~mv2.png/v1/fill/w_600,h_335,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/6a7b03_a86fd258a9e741dfb945d5b03359930d~mv2.png" alt="Schneider Electric performance commerciale" loading="lazy" />
               <div class="card__body">
-                <h3 class="card__title">Marketing B2B – Schneider Electric</h3>
-                <p class="card__desc">Nous avons étudié comment Schneider Electric structure et suit ses performances commerciales via sa chaîne de valeur et ses relations clients, s'appuyant sur des indicateurs et processus structurés. Ce projet m'a apporté une vision globale du pilotage de la performance dans un environnement B2B complexe.</p>
-                <div class="card__footer"><a href="https://www.canva.com/design/DAG497lMsws/YotBS5uQXIpExZmN1yrBUA/edit" target="_blank" rel="noopener" class="btn btn--ghost btn--sm">Voir le projet</a></div>
+                <h3 class="card__title" data-i18n="comp2_sc5_c2_title">Marketing B2B – Schneider Electric</h3>
+                <p class="card__desc" data-i18n="comp2_sc5_c2_desc">Nous avons étudié comment Schneider Electric structure et suit ses performances commerciales via sa chaîne de valeur et ses relations clients, s'appuyant sur des indicateurs et processus structurés. Ce projet m'a apporté une vision globale du pilotage de la performance dans un environnement B2B complexe.</p>
+                <div class="card__footer"><a href="https://www.canva.com/design/DAG497lMsws/YotBS5uQXIpExZmN1yrBUA/edit" target="_blank" rel="noopener" class="btn btn--ghost btn--sm" data-i18n="view_project">Voir le projet</a></div>
               </div>
             </div>
             <div class="card">
               <img class="card__image" src="https://static.wixstatic.com/media/6a7b03_8316477945944702a59d0a11bee46fb0~mv2.png/v1/fill/w_600,h_336,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/6a7b03_8316477945944702a59d0a11bee46fb0~mv2.png" alt="Peugeot suivi résultats" loading="lazy" />
               <div class="card__body">
-                <h3 class="card__title">Marketing B2B – Peugeot</h3>
-                <p class="card__desc">Dans l'étude Peugeot, nous avons analysé le suivi des volumes, contrats et relations clients pour ajuster les stratégies de vente en fonction des résultats obtenus. Ce projet m'a permis d'appréhender l'importance du suivi des résultats dans un environnement commercial structuré et concurrentiel.</p>
-                <div class="card__footer"><a href="https://www.canva.com/design/DAHA2-D0y5A/LdI1qPLMAtLXOkcrIr-4fg/edit" target="_blank" rel="noopener" class="btn btn--ghost btn--sm">Voir le projet</a></div>
+                <h3 class="card__title" data-i18n="comp2_sc5_c3_title">Marketing B2B – Peugeot</h3>
+                <p class="card__desc" data-i18n="comp2_sc5_c3_desc">Dans l'étude Peugeot, nous avons analysé le suivi des volumes, contrats et relations clients pour ajuster les stratégies de vente en fonction des résultats obtenus. Ce projet m'a permis d'appréhender l'importance du suivi des résultats dans un environnement commercial structuré et concurrentiel.</p>
+                <div class="card__footer"><a href="https://www.canva.com/design/DAHA2-D0y5A/LdI1qPLMAtLXOkcrIr-4fg/edit" target="_blank" rel="noopener" class="btn btn--ghost btn--sm" data-i18n="view_project">Voir le projet</a></div>
               </div>
             </div>
           </div>
@@ -258,9 +263,9 @@
       <!-- SC6 -->
       <div class="accordion">
         <button class="accordion-header">
-          <span class="accordion-header__title">
-            Prendre en compte les enjeux de la fonction achat pour la performance économique de l'entreprise
-            <span class="accordion-header__sub">Sous-compétence 6</span>
+                    <span class="accordion-header__title">
+            <span data-i18n="comp2_sc6">Prendre en compte les enjeux de la fonction achat pour la performance économique de l'entreprise</span>
+            <span class="accordion-header__sub" data-i18n="sc_label_6">Sous-compétence 6</span>
           </span>
           <span class="icon">+</span>
         </button>
@@ -269,25 +274,25 @@
             <div class="card">
               <img class="card__image" src="https://static.wixstatic.com/media/6a7b03_8d537673ce8a43ca9884f88e63dfc9b3~mv2.png/v1/fill/w_600,h_337,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/6a7b03_8d537673ce8a43ca9884f88e63dfc9b3~mv2.png" alt="Peugeot B2B logiques achat" loading="lazy" />
               <div class="card__body">
-                <h3 class="card__title">Marketing B2B – Peugeot</h3>
-                <p class="card__desc">Nous avons analysé les relations entre Peugeot et ses clients professionnels, en intégrant les logiques d'achat (coûts, volumes, négociation, rentabilité) propres au secteur automobile. Ce projet m'a permis de mieux appréhender les stratégies d'achat et leur impact sur les décisions de vente et la performance globale.</p>
-                <div class="card__footer"><a href="https://www.canva.com/design/DAHA2-D0y5A/LdI1qPLMAtLXOkcrIr-4fg/edit" target="_blank" rel="noopener" class="btn btn--ghost btn--sm">Voir le projet</a></div>
+                <h3 class="card__title" data-i18n="comp2_sc6_c1_title">Marketing B2B – Peugeot</h3>
+                <p class="card__desc" data-i18n="comp2_sc6_c1_desc">Nous avons analysé les relations entre Peugeot et ses clients professionnels, en intégrant les logiques d'achat (coûts, volumes, négociation, rentabilité) propres au secteur automobile. Ce projet m'a permis de mieux appréhender les stratégies d'achat et leur impact sur les décisions de vente et la performance globale.</p>
+                <div class="card__footer"><a href="https://www.canva.com/design/DAHA2-D0y5A/LdI1qPLMAtLXOkcrIr-4fg/edit" target="_blank" rel="noopener" class="btn btn--ghost btn--sm" data-i18n="view_project">Voir le projet</a></div>
               </div>
             </div>
             <div class="card">
               <img class="card__image" src="https://static.wixstatic.com/media/6a7b03_a3bef658e2dd4786abb6983fc1739667~mv2.png/v1/fill/w_600,h_334,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/6a7b03_a3bef658e2dd4786abb6983fc1739667~mv2.png" alt="Schneider Electric fonction achat" loading="lazy" />
               <div class="card__body">
-                <h3 class="card__title">Marketing B2B – Schneider Electric</h3>
-                <p class="card__desc">Dans l'analyse Schneider Electric, nous avons compris que les décisions d'achat des clients B2B sont guidées par des enjeux de performance économique, rentabilité et optimisation des coûts, influençant fortement la stratégie commerciale. Ce projet m'a permis de mieux comprendre les enjeux liés à la fonction achat dans un contexte B2B complexe.</p>
-                <div class="card__footer"><a href="https://www.canva.com/design/DAG497lMsws/YotBS5uQXIpExZmN1yrBUA/edit" target="_blank" rel="noopener" class="btn btn--ghost btn--sm">Voir le projet</a></div>
+                <h3 class="card__title" data-i18n="comp2_sc6_c2_title">Marketing B2B – Schneider Electric</h3>
+                <p class="card__desc" data-i18n="comp2_sc6_c2_desc">Dans l'analyse Schneider Electric, nous avons compris que les décisions d'achat des clients B2B sont guidées par des enjeux de performance économique, rentabilité et optimisation des coûts, influençant fortement la stratégie commerciale. Ce projet m'a permis de mieux comprendre les enjeux liés à la fonction achat dans un contexte B2B complexe.</p>
+                <div class="card__footer"><a href="https://www.canva.com/design/DAG497lMsws/YotBS5uQXIpExZmN1yrBUA/edit" target="_blank" rel="noopener" class="btn btn--ghost btn--sm" data-i18n="view_project">Voir le projet</a></div>
               </div>
             </div>
             <div class="card">
               <img class="card__image" src="https://static.wixstatic.com/media/6a7b03_9560a0a04724487b9da2b77d1b7ed107~mv2.png/v1/fill/w_600,h_335,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/6a7b03_9560a0a04724487b9da2b77d1b7ed107~mv2.png" alt="Ruckfield enjeux achat" loading="lazy" />
               <div class="card__body">
-                <h3 class="card__title">Entretien de vente – Cas Ruckfield</h3>
-                <p class="card__desc">Face à un interlocuteur professionnel agissant comme acheteur, j'ai dû anticiper ses objectifs économiques (rentabilité, rotation des stocks) pour orienter mon argumentation. Ce projet m'a permis de comprendre l'importance de la prise en compte des enjeux d'achat dans un argumentaire de vente efficace.</p>
-                <div class="card__footer"><a href="https://www.canva.com/design/DAG_0aPJlf0/pf_E5kAipu8W-6AE3AftUw/edit" target="_blank" rel="noopener" class="btn btn--ghost btn--sm">Voir le projet</a></div>
+                <h3 class="card__title" data-i18n="comp2_sc6_c3_title">Entretien de vente – Cas Ruckfield</h3>
+                <p class="card__desc" data-i18n="comp2_sc6_c3_desc">Face à un interlocuteur professionnel agissant comme acheteur, j'ai dû anticiper ses objectifs économiques (rentabilité, rotation des stocks) pour orienter mon argumentation. Ce projet m'a permis de comprendre l'importance de la prise en compte des enjeux d'achat dans un argumentaire de vente efficace.</p>
+                <div class="card__footer"><a href="https://www.canva.com/design/DAG_0aPJlf0/pf_E5kAipu8W-6AE3AftUw/edit" target="_blank" rel="noopener" class="btn btn--ghost btn--sm" data-i18n="view_project">Voir le projet</a></div>
               </div>
             </div>
           </div>
@@ -302,15 +307,16 @@
     <div class="container">
       <div class="footer__inner">
         <span class="footer__name">Felipe Tecco</span>
-        <span class="footer__meta">BUT Techniques de Commercialisation · IUT d'Évry Val d'Essonne · 2024–2027</span>
+        <span class="footer__meta" data-i18n="footer_meta">BUT Techniques de Commercialisation · IUT d'Évry Val d'Essonne · 2024–2027</span>
         <div class="footer__links">
-          <a href="contact.html">Contact</a>
-          <a href="index.html">Accueil</a>
+          <a href="contact.html" data-i18n="footer_contact">Contact</a>
+          <a href="index.html" data-i18n="footer_home">Accueil</a>
         </div>
       </div>
     </div>
   </footer>
 
+  <script src="assets/i18n.js"></script>
   <script src="assets/main.js"></script>
 </body>
 </html>

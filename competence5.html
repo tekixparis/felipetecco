@@ -16,43 +16,48 @@
     <div class="nav__inner">
       <a href="index.html" class="nav__brand">Felipe <span>Tecco</span></a>
       <ul class="nav__links">
-        <li><a href="index.html" class="nav__link">Accueil</a></li>
-        <li><a href="profil.html" class="nav__link">Mon Parcours</a></li>
+        <li><a href="index.html" class="nav__link" data-i18n="nav_home">Accueil</a></li>
+        <li><a href="profil.html" class="nav__link" data-i18n="nav_parcours">Mon Parcours</a></li>
         <li class="nav__dropdown">
-          <span class="nav__dropdown-toggle" tabindex="0">Compétences <span class="chevron"></span></span>
+          <span class="nav__dropdown-toggle" tabindex="0"><span data-i18n="nav_competences">Compétences</span> <span class="chevron"></span></span>
           <ul class="nav__dropdown-menu">
-            <li><a href="competence1.html" class="nav__dropdown-item">Compétence 1 <span class="item-sub">Marketing</span></a></li>
-            <li><a href="competence2.html" class="nav__dropdown-item">Compétence 2 <span class="item-sub">Vente</span></a></li>
-            <li><a href="competence3.html" class="nav__dropdown-item">Compétence 3 <span class="item-sub">Communication</span></a></li>
-            <li><a href="competence4.html" class="nav__dropdown-item">Compétence 4 <span class="item-sub">Business Développement</span></a></li>
-            <li><a href="competence5.html" class="nav__dropdown-item">Compétence 5 <span class="item-sub">Relation Client</span></a></li>
+            <li><a href="competence1.html" class="nav__dropdown-item"><span data-i18n="nav_comp1">Compétence 1</span> <span class="item-sub" data-i18n="nav_comp1sub">Marketing</span></a></li>
+            <li><a href="competence2.html" class="nav__dropdown-item"><span data-i18n="nav_comp2">Compétence 2</span> <span class="item-sub" data-i18n="nav_comp2sub">Vente</span></a></li>
+            <li><a href="competence3.html" class="nav__dropdown-item"><span data-i18n="nav_comp3">Compétence 3</span> <span class="item-sub" data-i18n="nav_comp3sub">Communication</span></a></li>
+            <li><a href="competence4.html" class="nav__dropdown-item"><span data-i18n="nav_comp4">Compétence 4</span> <span class="item-sub" data-i18n="nav_comp4sub">Business Développement</span></a></li>
+            <li><a href="competence5.html" class="nav__dropdown-item"><span data-i18n="nav_comp5">Compétence 5</span> <span class="item-sub" data-i18n="nav_comp5sub">Relation Client</span></a></li>
           </ul>
         </li>
-        <li><a href="contact.html" class="nav__link">Contact</a></li>
+        <li><a href="contact.html" class="nav__link" data-i18n="nav_contact">Contact</a></li>
       </ul>
-      <button class="nav__hamburger" aria-label="Ouvrir le menu"><span></span><span></span><span></span></button>
+      <div class="lang-switcher">
+        <button class="lang-btn" data-lang="fr">FR</button>
+        <button class="lang-btn" data-lang="es">ES</button>
+        <button class="lang-btn" data-lang="en">EN</button>
+      </div>
+      <button class="nav__hamburger" data-i18n-aria="nav_hamburger" aria-label="Ouvrir le menu"><span></span><span></span><span></span></button>
     </div>
     <div class="nav__mobile">
-      <a href="index.html" class="nav__link">Accueil</a>
-      <a href="profil.html" class="nav__link">Mon Parcours</a>
-      <span class="nav__dropdown-toggle">Compétences <span class="chevron"></span></span>
+      <a href="index.html" class="nav__link" data-i18n="nav_home">Accueil</a>
+      <a href="profil.html" class="nav__link" data-i18n="nav_parcours">Mon Parcours</a>
+      <span class="nav__dropdown-toggle"><span data-i18n="nav_competences">Compétences</span> <span class="chevron"></span></span>
       <ul class="nav__dropdown-menu">
-        <li><a href="competence1.html" class="nav__dropdown-item">Compétence 1 — Marketing</a></li>
-        <li><a href="competence2.html" class="nav__dropdown-item">Compétence 2 — Vente</a></li>
-        <li><a href="competence3.html" class="nav__dropdown-item">Compétence 3 — Communication</a></li>
-        <li><a href="competence4.html" class="nav__dropdown-item">Compétence 4 — Business Développement</a></li>
-        <li><a href="competence5.html" class="nav__dropdown-item">Compétence 5 — Relation Client</a></li>
+        <li><a href="competence1.html" class="nav__dropdown-item" data-i18n="nav_mob_comp1">Compétence 1 — Marketing</a></li>
+        <li><a href="competence2.html" class="nav__dropdown-item" data-i18n="nav_mob_comp2">Compétence 2 — Vente</a></li>
+        <li><a href="competence3.html" class="nav__dropdown-item" data-i18n="nav_mob_comp3">Compétence 3 — Communication</a></li>
+        <li><a href="competence4.html" class="nav__dropdown-item" data-i18n="nav_mob_comp4">Compétence 4 — Business Développement</a></li>
+        <li><a href="competence5.html" class="nav__dropdown-item" data-i18n="nav_mob_comp5">Compétence 5 — Relation Client</a></li>
       </ul>
-      <a href="contact.html" class="nav__link">Contact</a>
+      <a href="contact.html" class="nav__link" data-i18n="nav_contact">Contact</a>
     </div>
   </nav>
 
   <!-- PAGE HERO -->
   <div class="page-hero">
     <div class="container">
-      <span class="page-hero__eyebrow">Compétence 5</span>
-      <h1 class="page-hero__title">Relation Client</h1>
-      <p class="page-hero__subtitle">Manager la relation client</p>
+      <span class="page-hero__eyebrow" data-i18n="comp5_eyebrow">Compétence 5</span>
+      <h1 class="page-hero__title" data-i18n="comp5_title">Relation Client</h1>
+      <p class="page-hero__subtitle" data-i18n="comp5_subtitle">Manager la relation client</p>
     </div>
   </div>
 
@@ -63,9 +68,9 @@
       <!-- SC1 -->
       <div class="accordion">
         <button class="accordion-header">
-          <span class="accordion-header__title">
-            Intégrer la satisfaction client dans la réussite de la relation commerciale et la réputation de l'entreprise
-            <span class="accordion-header__sub">Sous-compétence 1</span>
+                    <span class="accordion-header__title">
+            <span data-i18n="comp5_sc1">Intégrer la satisfaction client dans la réussite de la relation commerciale et la réputation de l'entreprise</span>
+            <span class="accordion-header__sub" data-i18n="sc_label_1">Sous-compétence 1</span>
           </span>
           <span class="icon">+</span>
         </button>
@@ -74,25 +79,25 @@
             <div class="card">
               <img class="card__image" src="https://static.wixstatic.com/media/6a7b03_993b29c3be6f4203aa1513b52b6a3604~mv2.png/v1/fill/w_600,h_336,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/6a7b03_993b29c3be6f4203aa1513b52b6a3604~mv2.png" alt="Ruckfield satisfaction client" loading="lazy" />
               <div class="card__body">
-                <h3 class="card__title">Entretien de vente – Cas Ruckfield</h3>
-                <p class="card__desc">En construisant mon argumentation Ruckfield, j'ai veillé à garantir l'adéquation de l'offre avec les attentes du distributeur et de sa clientèle finale, pour favoriser satisfaction et relation commerciale durable. Ce projet m'a permis de comprendre que la satisfaction client est un levier direct de performance et d'image pour l'entreprise.</p>
-                <div class="card__footer"><a href="https://www.canva.com/design/DAG_0aPJlf0/pf_E5kAipu8W-6AE3AftUw/edit" target="_blank" rel="noopener" class="btn btn--ghost btn--sm">Voir le projet</a></div>
+                <h3 class="card__title" data-i18n="comp5_sc1_c1_title">Entretien de vente – Cas Ruckfield</h3>
+                <p class="card__desc" data-i18n="comp5_sc1_c1_desc">En construisant mon argumentation Ruckfield, j'ai veillé à garantir l'adéquation de l'offre avec les attentes du distributeur et de sa clientèle finale, pour favoriser satisfaction et relation commerciale durable. Ce projet m'a permis de comprendre que la satisfaction client est un levier direct de performance et d'image pour l'entreprise.</p>
+                <div class="card__footer"><a href="https://www.canva.com/design/DAG_0aPJlf0/pf_E5kAipu8W-6AE3AftUw/edit" target="_blank" rel="noopener" class="btn btn--ghost btn--sm" data-i18n="view_project">Voir le projet</a></div>
               </div>
             </div>
             <div class="card">
               <img class="card__image" src="https://static.wixstatic.com/media/6a7b03_08ba4cb90bea4dcebb5eb8085402aeba~mv2.png/v1/fill/w_600,h_335,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/6a7b03_08ba4cb90bea4dcebb5eb8085402aeba~mv2.png" alt="Part'Âge application mobile seniors satisfaction" loading="lazy" />
               <div class="card__body">
-                <h3 class="card__title">Part'Âge – Application mobile seniors</h3>
-                <p class="card__desc">Nous avons conçu Part'Âge en centrant l'offre sur la satisfaction des seniors : simplicité d'usage, accessibilité, sécurité et réponse à un besoin social fort. Ce projet m'a permis de comprendre le lien direct entre satisfaction client, adoption d'une offre et image de marque.</p>
-                <div class="card__footer"><a href="https://www.canva.com/design/DAG-NcXLlII/H0peiGUd16A9NmRMWsntsw/edit" target="_blank" rel="noopener" class="btn btn--ghost btn--sm">Voir le projet</a></div>
+                <h3 class="card__title" data-i18n="comp5_sc1_c2_title">Part'Âge – Application mobile seniors</h3>
+                <p class="card__desc" data-i18n="comp5_sc1_c2_desc">Nous avons conçu Part'Âge en centrant l'offre sur la satisfaction des seniors : simplicité d'usage, accessibilité, sécurité et réponse à un besoin social fort. Ce projet m'a permis de comprendre le lien direct entre satisfaction client, adoption d'une offre et image de marque.</p>
+                <div class="card__footer"><a href="https://www.canva.com/design/DAG-NcXLlII/H0peiGUd16A9NmRMWsntsw/edit" target="_blank" rel="noopener" class="btn btn--ghost btn--sm" data-i18n="view_project">Voir le projet</a></div>
               </div>
             </div>
             <div class="card">
               <img class="card__image" src="https://static.wixstatic.com/media/6a7b03_e6720b780b384caf939088b5d8f4f5ed~mv2.png/v1/fill/w_600,h_333,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/6a7b03_e6720b780b384caf939088b5d8f4f5ed~mv2.png" alt="Michel et Augustin expérience client image" loading="lazy" />
               <div class="card__body">
-                <h3 class="card__title">Michel & Augustin – Expérience client et image de marque</h3>
-                <p class="card__desc">Nous avons analysé comment Michel & Augustin construit une relation positive avec ses consommateurs via sa communication : proximité, ton convivial et engagement contribuent à la satisfaction et à la bonne réputation. Ce projet m'a permis de comprendre que la satisfaction client repose sur l'expérience globale au-delà du produit.</p>
-                <div class="card__footer"><a href="https://www.canva.com/design/DAHAvshxKjs/Dt5GbH0t8UQNN6Q5ZSJFBg/edit" target="_blank" rel="noopener" class="btn btn--ghost btn--sm">Voir le projet</a></div>
+                <h3 class="card__title" data-i18n="comp5_sc1_c3_title">Michel & Augustin – Expérience client et image de marque</h3>
+                <p class="card__desc" data-i18n="comp5_sc1_c3_desc">Nous avons analysé comment Michel & Augustin construit une relation positive avec ses consommateurs via sa communication : proximité, ton convivial et engagement contribuent à la satisfaction et à la bonne réputation. Ce projet m'a permis de comprendre que la satisfaction client repose sur l'expérience globale au-delà du produit.</p>
+                <div class="card__footer"><a href="https://www.canva.com/design/DAHAvshxKjs/Dt5GbH0t8UQNN6Q5ZSJFBg/edit" target="_blank" rel="noopener" class="btn btn--ghost btn--sm" data-i18n="view_project">Voir le projet</a></div>
               </div>
             </div>
           </div>
@@ -102,9 +107,9 @@
       <!-- SC2 -->
       <div class="accordion">
         <button class="accordion-header">
-          <span class="accordion-header__title">
-            Piloter sa relation client au moyen d'indicateurs
-            <span class="accordion-header__sub">Sous-compétence 2</span>
+                    <span class="accordion-header__title">
+            <span data-i18n="comp5_sc2">Piloter sa relation client au moyen d'indicateurs</span>
+            <span class="accordion-header__sub" data-i18n="sc_label_2">Sous-compétence 2</span>
           </span>
           <span class="icon">+</span>
         </button>
@@ -113,25 +118,25 @@
             <div class="card">
               <img class="card__image" src="https://static.wixstatic.com/media/6a7b03_ae88f66e83a141b299c2b0657a90dcac~mv2.png/v1/fill/w_600,h_302,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/6a7b03_ae88f66e83a141b299c2b0657a90dcac~mv2.png" alt="Tableau de bord commercial Excel indicateurs" loading="lazy" />
               <div class="card__body">
-                <h3 class="card__title">Tableau de bord commercial Excel</h3>
-                <p class="card__desc">Nous avons conçu un tableau de bord sous Excel (CA, KPI, évolution des performances) pour centraliser les données et faciliter la prise de décision. Ce projet m'a permis de comprendre comment les indicateurs de performance permettent de piloter efficacement la relation client et l'activité commerciale.</p>
+                <h3 class="card__title" data-i18n="comp5_sc2_c1_title">Tableau de bord commercial Excel</h3>
+                <p class="card__desc" data-i18n="comp5_sc2_c1_desc">Nous avons conçu un tableau de bord sous Excel (CA, KPI, évolution des performances) pour centraliser les données et faciliter la prise de décision. Ce projet m'a permis de comprendre comment les indicateurs de performance permettent de piloter efficacement la relation client et l'activité commerciale.</p>
                 
               </div>
             </div>
             <div class="card">
               <img class="card__image" src="https://static.wixstatic.com/media/6a7b03_0df8748d7ea5417e8c7ce85c38475886~mv2.png/v1/fill/w_600,h_333,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/6a7b03_0df8748d7ea5417e8c7ce85c38475886~mv2.png" alt="Schneider Electric performance chaîne de valeur" loading="lazy" />
               <div class="card__body">
-                <h3 class="card__title">Schneider Electric – Performance et chaîne de valeur</h3>
-                <p class="card__desc">Nous avons étudié comment Schneider Electric suit sa performance B2B via des indicateurs stratégiques pour optimiser ses relations clients à grande échelle. Ce projet m'a permis de comprendre l'importance des outils de pilotage dans la gestion de la relation client.</p>
-                <div class="card__footer"><a href="https://www.canva.com/design/DAG497lMsws/YotBS5uQXIpExZmN1yrBUA/edit" target="_blank" rel="noopener" class="btn btn--ghost btn--sm">Voir le projet</a></div>
+                <h3 class="card__title" data-i18n="comp5_sc2_c2_title">Schneider Electric – Performance et chaîne de valeur</h3>
+                <p class="card__desc" data-i18n="comp5_sc2_c2_desc">Nous avons étudié comment Schneider Electric suit sa performance B2B via des indicateurs stratégiques pour optimiser ses relations clients à grande échelle. Ce projet m'a permis de comprendre l'importance des outils de pilotage dans la gestion de la relation client.</p>
+                <div class="card__footer"><a href="https://www.canva.com/design/DAG497lMsws/YotBS5uQXIpExZmN1yrBUA/edit" target="_blank" rel="noopener" class="btn btn--ghost btn--sm" data-i18n="view_project">Voir le projet</a></div>
               </div>
             </div>
             <div class="card">
               <img class="card__image" src="https://static.wixstatic.com/media/6a7b03_8ec4f8e7a6cf4786aeba2411abf3dfc1~mv2.png/v1/fill/w_600,h_335,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/6a7b03_8ec4f8e7a6cf4786aeba2411abf3dfc1~mv2.png" alt="Peugeot suivi performance commerciale" loading="lazy" />
               <div class="card__body">
-                <h3 class="card__title">Peugeot B2B – Suivi de la performance commerciale</h3>
-                <p class="card__desc">Dans l'étude Peugeot, nous avons analysé comment les indicateurs (volumes de vente, contrats, relations clients) permettent d'ajuster les actions commerciales et d'optimiser la relation client. Ce projet m'a permis de comprendre comment les données structurent la gestion de la relation client dans un secteur B2B.</p>
-                <div class="card__footer"><a href="https://www.canva.com/design/DAHA2-D0y5A/LdI1qPLMAtLXOkcrIr-4fg/edit" target="_blank" rel="noopener" class="btn btn--ghost btn--sm">Voir le projet</a></div>
+                <h3 class="card__title" data-i18n="comp5_sc2_c3_title">Peugeot B2B – Suivi de la performance commerciale</h3>
+                <p class="card__desc" data-i18n="comp5_sc2_c3_desc">Dans l'étude Peugeot, nous avons analysé comment les indicateurs (volumes de vente, contrats, relations clients) permettent d'ajuster les actions commerciales et d'optimiser la relation client. Ce projet m'a permis de comprendre comment les données structurent la gestion de la relation client dans un secteur B2B.</p>
+                <div class="card__footer"><a href="https://www.canva.com/design/DAHA2-D0y5A/LdI1qPLMAtLXOkcrIr-4fg/edit" target="_blank" rel="noopener" class="btn btn--ghost btn--sm" data-i18n="view_project">Voir le projet</a></div>
               </div>
             </div>
           </div>
@@ -141,9 +146,9 @@
       <!-- SC3 -->
       <div class="accordion">
         <button class="accordion-header">
-          <span class="accordion-header__title">
-            Traiter les réclamations client pour optimiser l'activité
-            <span class="accordion-header__sub">Sous-compétence 3</span>
+                    <span class="accordion-header__title">
+            <span data-i18n="comp5_sc3">Traiter les réclamations client pour optimiser l'activité</span>
+            <span class="accordion-header__sub" data-i18n="sc_label_3">Sous-compétence 3</span>
           </span>
           <span class="icon">+</span>
         </button>
@@ -152,25 +157,25 @@
             <div class="card">
               <img class="card__image" src="https://static.wixstatic.com/media/6a7b03_a015f46973ac4ec2843fc5bb0d99610e~mv2.png/v1/fill/w_600,h_339,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/6a7b03_a015f46973ac4ec2843fc5bb0d99610e~mv2.png" alt="Communication de crise Carrefour réclamations" loading="lazy" />
               <div class="card__body">
-                <h3 class="card__title">Communication de crise – Carrefour</h3>
-                <p class="card__desc">Nous avons travaillé sur la gestion d'un bad buzz Carrefour, analysant les causes d'insatisfaction (manque de transparence, greenwashing perçu) et construisant une stratégie de crise pour restaurer la confiance. Ce projet m'a permis de comprendre comment le traitement des réclamations peut être transformé en levier d'amélioration et de protection de la réputation.</p>
-                <div class="card__footer"><a href="https://www.canva.com/design/DAG7li88ePQ/NHK-PbdaGgLIfol9tX46SA/edit" target="_blank" rel="noopener" class="btn btn--ghost btn--sm">Voir le projet</a></div>
+                <h3 class="card__title" data-i18n="comp5_sc3_c1_title">Communication de crise – Carrefour</h3>
+                <p class="card__desc" data-i18n="comp5_sc3_c1_desc">Nous avons travaillé sur la gestion d'un bad buzz Carrefour, analysant les causes d'insatisfaction (manque de transparence, greenwashing perçu) et construisant une stratégie de crise pour restaurer la confiance. Ce projet m'a permis de comprendre comment le traitement des réclamations peut être transformé en levier d'amélioration et de protection de la réputation.</p>
+                <div class="card__footer"><a href="https://www.canva.com/design/DAG7li88ePQ/NHK-PbdaGgLIfol9tX46SA/edit" target="_blank" rel="noopener" class="btn btn--ghost btn--sm" data-i18n="view_project">Voir le projet</a></div>
               </div>
             </div>
             <div class="card">
               <img class="card__image" src="https://static.wixstatic.com/media/6a7b03_bd0febd1823f4675a229a03cb797e2f6~mv2.png/v1/fill/w_600,h_334,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/6a7b03_bd0febd1823f4675a229a03cb797e2f6~mv2.png" alt="Michel et Augustin retours clients image" loading="lazy" />
               <div class="card__body">
-                <h3 class="card__title">Michel & Augustin – Expérience client et image</h3>
-                <p class="card__desc">Nous avons étudié comment Michel & Augustin gère les retours clients (positifs et négatifs) en maintenant une image cohérente. Ce projet m'a permis de comprendre que la gestion des insatisfactions joue un rôle essentiel dans la réputation et la performance d'une entreprise.</p>
-                <div class="card__footer"><a href="https://www.canva.com/design/DAHAvshxKjs/Dt5GbH0t8UQNN6Q5ZSJFBg/edit" target="_blank" rel="noopener" class="btn btn--ghost btn--sm">Voir le projet</a></div>
+                <h3 class="card__title" data-i18n="comp5_sc3_c2_title">Michel & Augustin – Expérience client et image</h3>
+                <p class="card__desc" data-i18n="comp5_sc3_c2_desc">Nous avons étudié comment Michel & Augustin gère les retours clients (positifs et négatifs) en maintenant une image cohérente. Ce projet m'a permis de comprendre que la gestion des insatisfactions joue un rôle essentiel dans la réputation et la performance d'une entreprise.</p>
+                <div class="card__footer"><a href="https://www.canva.com/design/DAHAvshxKjs/Dt5GbH0t8UQNN6Q5ZSJFBg/edit" target="_blank" rel="noopener" class="btn btn--ghost btn--sm" data-i18n="view_project">Voir le projet</a></div>
               </div>
             </div>
             <div class="card">
               <img class="card__image" src="https://static.wixstatic.com/media/6a7b03_b42cd659ca594e989d528cdb570fec15~mv2.png/v1/fill/w_600,h_337,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/6a7b03_b42cd659ca594e989d528cdb570fec15~mv2.png" alt="BEN B perception utilisateur communication" loading="lazy" />
               <div class="card__body">
-                <h3 class="card__title">BEN B – Stratégie de communication et perception utilisateur</h3>
-                <p class="card__desc">Nous avons identifié dans la communication de BEN B les points pouvant générer de l'insatisfaction et proposé des ajustements pour améliorer la cohérence du message. Ce projet m'a permis de comprendre l'importance d'anticiper et de traiter les retours négatifs dans une stratégie de communication.</p>
-                <div class="card__footer"><a href="https://www.canva.com/design/DAG1SPs_haw/HtPzhf8jxZyE9gS9frgGMw/edit" target="_blank" rel="noopener" class="btn btn--ghost btn--sm">Voir le projet</a></div>
+                <h3 class="card__title" data-i18n="comp5_sc3_c3_title">BEN B – Stratégie de communication et perception utilisateur</h3>
+                <p class="card__desc" data-i18n="comp5_sc3_c3_desc">Nous avons identifié dans la communication de BEN B les points pouvant générer de l'insatisfaction et proposé des ajustements pour améliorer la cohérence du message. Ce projet m'a permis de comprendre l'importance d'anticiper et de traiter les retours négatifs dans une stratégie de communication.</p>
+                <div class="card__footer"><a href="https://www.canva.com/design/DAG1SPs_haw/HtPzhf8jxZyE9gS9frgGMw/edit" target="_blank" rel="noopener" class="btn btn--ghost btn--sm" data-i18n="view_project">Voir le projet</a></div>
               </div>
             </div>
           </div>
@@ -180,9 +185,9 @@
       <!-- SC4 -->
       <div class="accordion">
         <button class="accordion-header">
-          <span class="accordion-header__title">
-            Exploiter de façon pertinente les outils de la relation client
-            <span class="accordion-header__sub">Sous-compétence 4</span>
+                    <span class="accordion-header__title">
+            <span data-i18n="comp5_sc4">Exploiter de façon pertinente les outils de la relation client</span>
+            <span class="accordion-header__sub" data-i18n="sc_label_4">Sous-compétence 4</span>
           </span>
           <span class="icon">+</span>
         </button>
@@ -191,25 +196,25 @@
             <div class="card">
               <img class="card__image" src="https://static.wixstatic.com/media/6a7b03_82e4e3309092459c916782149c49f478~mv2.png/v1/fill/w_600,h_321,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/6a7b03_82e4e3309092459c916782149c49f478~mv2.png" alt="Tableau de bord Excel outils relation client" loading="lazy" />
               <div class="card__body">
-                <h3 class="card__title">Tableau de bord commercial Excel</h3>
-                <p class="card__desc">Nous avons créé un tableau de bord Excel de pilotage de la relation client (CA, KPI, évolution des ventes) avec tableaux et graphiques pour rendre le suivi lisible et exploitable. Ce projet m'a permis de comprendre l'importance des outils de gestion et de suivi dans l'optimisation de la relation client.</p>
+                <h3 class="card__title" data-i18n="comp5_sc4_c1_title">Tableau de bord commercial Excel</h3>
+                <p class="card__desc" data-i18n="comp5_sc4_c1_desc">Nous avons créé un tableau de bord Excel de pilotage de la relation client (CA, KPI, évolution des ventes) avec tableaux et graphiques pour rendre le suivi lisible et exploitable. Ce projet m'a permis de comprendre l'importance des outils de gestion et de suivi dans l'optimisation de la relation client.</p>
                 
               </div>
             </div>
             <div class="card">
               <img class="card__image" src="https://static.wixstatic.com/media/6a7b03_52f1ab35c882420a972deaf7fde78534~mv2.png/v1/fill/w_600,h_338,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/6a7b03_52f1ab35c882420a972deaf7fde78534~mv2.png" alt="Schneider Electric outils gestion B2B" loading="lazy" />
               <div class="card__body">
-                <h3 class="card__title">Schneider Electric – Outils de gestion B2B</h3>
-                <p class="card__desc">Nous avons analysé les outils et méthodes de Schneider Electric pour gérer sa relation client B2B : chaîne de valeur, processus de suivi, outils analytiques. Ce projet m'a permis d'appréhender l'importance des outils de pilotage dans la gestion de la relation client à grande échelle.</p>
-                <div class="card__footer"><a href="https://www.canva.com/design/DAG497lMsws/YotBS5uQXIpExZmN1yrBUA/edit" target="_blank" rel="noopener" class="btn btn--ghost btn--sm">Voir le projet</a></div>
+                <h3 class="card__title" data-i18n="comp5_sc4_c2_title">Schneider Electric – Outils de gestion B2B</h3>
+                <p class="card__desc" data-i18n="comp5_sc4_c2_desc">Nous avons analysé les outils et méthodes de Schneider Electric pour gérer sa relation client B2B : chaîne de valeur, processus de suivi, outils analytiques. Ce projet m'a permis d'appréhender l'importance des outils de pilotage dans la gestion de la relation client à grande échelle.</p>
+                <div class="card__footer"><a href="https://www.canva.com/design/DAG497lMsws/YotBS5uQXIpExZmN1yrBUA/edit" target="_blank" rel="noopener" class="btn btn--ghost btn--sm" data-i18n="view_project">Voir le projet</a></div>
               </div>
             </div>
             <div class="card">
               <img class="card__image" src="https://static.wixstatic.com/media/6a7b03_24af90d9105540278b28c8b9b6189181~mv2.png/v1/fill/w_600,h_336,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/6a7b03_24af90d9105540278b28c8b9b6189181~mv2.png" alt="Peugeot exploitation données commerciales" loading="lazy" />
               <div class="card__body">
-                <h3 class="card__title">Peugeot B2B – Exploitation des données commerciales</h3>
-                <p class="card__desc">Nous avons analysé comment Peugeot exploite les indicateurs de performance, outils de suivi des ventes et contrats pour optimiser sa relation client professionnelle. Ce projet m'a permis de comprendre comment les outils de la relation client sont exploités dans un environnement B2B structuré.</p>
-                <div class="card__footer"><a href="https://www.canva.com/design/DAHA2-D0y5A/LdI1qPLMAtLXOkcrIr-4fg/edit" target="_blank" rel="noopener" class="btn btn--ghost btn--sm">Voir le projet</a></div>
+                <h3 class="card__title" data-i18n="comp5_sc4_c3_title">Peugeot B2B – Exploitation des données commerciales</h3>
+                <p class="card__desc" data-i18n="comp5_sc4_c3_desc">Nous avons analysé comment Peugeot exploite les indicateurs de performance, outils de suivi des ventes et contrats pour optimiser sa relation client professionnelle. Ce projet m'a permis de comprendre comment les outils de la relation client sont exploités dans un environnement B2B structuré.</p>
+                <div class="card__footer"><a href="https://www.canva.com/design/DAHA2-D0y5A/LdI1qPLMAtLXOkcrIr-4fg/edit" target="_blank" rel="noopener" class="btn btn--ghost btn--sm" data-i18n="view_project">Voir le projet</a></div>
               </div>
             </div>
           </div>
@@ -224,15 +229,16 @@
     <div class="container">
       <div class="footer__inner">
         <span class="footer__name">Felipe Tecco</span>
-        <span class="footer__meta">BUT Techniques de Commercialisation · IUT d'Évry Val d'Essonne · 2024–2027</span>
+        <span class="footer__meta" data-i18n="footer_meta">BUT Techniques de Commercialisation · IUT d'Évry Val d'Essonne · 2024–2027</span>
         <div class="footer__links">
-          <a href="contact.html">Contact</a>
-          <a href="index.html">Accueil</a>
+          <a href="contact.html" data-i18n="footer_contact">Contact</a>
+          <a href="index.html" data-i18n="footer_home">Accueil</a>
         </div>
       </div>
     </div>
   </footer>
 
+  <script src="assets/i18n.js"></script>
   <script src="assets/main.js"></script>
 </body>
 </html>

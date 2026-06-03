@@ -16,34 +16,39 @@
     <div class="nav__inner">
       <a href="index.html" class="nav__brand">Felipe <span>Tecco</span></a>
       <ul class="nav__links">
-        <li><a href="index.html" class="nav__link">Accueil</a></li>
-        <li><a href="profil.html" class="nav__link">Mon Parcours</a></li>
+        <li><a href="index.html" class="nav__link" data-i18n="nav_home">Accueil</a></li>
+        <li><a href="profil.html" class="nav__link" data-i18n="nav_parcours">Mon Parcours</a></li>
         <li class="nav__dropdown">
-          <span class="nav__dropdown-toggle" tabindex="0">Compétences <span class="chevron"></span></span>
+          <span class="nav__dropdown-toggle" tabindex="0"><span data-i18n="nav_competences">Compétences</span> <span class="chevron"></span></span>
           <ul class="nav__dropdown-menu">
-            <li><a href="competence1.html" class="nav__dropdown-item">Compétence 1 <span class="item-sub">Marketing</span></a></li>
-            <li><a href="competence2.html" class="nav__dropdown-item">Compétence 2 <span class="item-sub">Vente</span></a></li>
-            <li><a href="competence3.html" class="nav__dropdown-item">Compétence 3 <span class="item-sub">Communication</span></a></li>
-            <li><a href="competence4.html" class="nav__dropdown-item">Compétence 4 <span class="item-sub">Business Développement</span></a></li>
-            <li><a href="competence5.html" class="nav__dropdown-item">Compétence 5 <span class="item-sub">Relation Client</span></a></li>
+            <li><a href="competence1.html" class="nav__dropdown-item"><span data-i18n="nav_comp1">Compétence 1</span> <span class="item-sub" data-i18n="nav_comp1sub">Marketing</span></a></li>
+            <li><a href="competence2.html" class="nav__dropdown-item"><span data-i18n="nav_comp2">Compétence 2</span> <span class="item-sub" data-i18n="nav_comp2sub">Vente</span></a></li>
+            <li><a href="competence3.html" class="nav__dropdown-item"><span data-i18n="nav_comp3">Compétence 3</span> <span class="item-sub" data-i18n="nav_comp3sub">Communication</span></a></li>
+            <li><a href="competence4.html" class="nav__dropdown-item"><span data-i18n="nav_comp4">Compétence 4</span> <span class="item-sub" data-i18n="nav_comp4sub">Business Développement</span></a></li>
+            <li><a href="competence5.html" class="nav__dropdown-item"><span data-i18n="nav_comp5">Compétence 5</span> <span class="item-sub" data-i18n="nav_comp5sub">Relation Client</span></a></li>
           </ul>
         </li>
-        <li><a href="contact.html" class="nav__link">Contact</a></li>
+        <li><a href="contact.html" class="nav__link" data-i18n="nav_contact">Contact</a></li>
       </ul>
-      <button class="nav__hamburger" aria-label="Ouvrir le menu"><span></span><span></span><span></span></button>
+      <div class="lang-switcher">
+        <button class="lang-btn" data-lang="fr">FR</button>
+        <button class="lang-btn" data-lang="es">ES</button>
+        <button class="lang-btn" data-lang="en">EN</button>
+      </div>
+      <button class="nav__hamburger" data-i18n-aria="nav_hamburger" aria-label="Ouvrir le menu"><span></span><span></span><span></span></button>
     </div>
     <div class="nav__mobile">
-      <a href="index.html" class="nav__link">Accueil</a>
-      <a href="profil.html" class="nav__link">Mon Parcours</a>
-      <span class="nav__dropdown-toggle">Compétences <span class="chevron"></span></span>
+      <a href="index.html" class="nav__link" data-i18n="nav_home">Accueil</a>
+      <a href="profil.html" class="nav__link" data-i18n="nav_parcours">Mon Parcours</a>
+      <span class="nav__dropdown-toggle"><span data-i18n="nav_competences">Compétences</span> <span class="chevron"></span></span>
       <ul class="nav__dropdown-menu">
-        <li><a href="competence1.html" class="nav__dropdown-item">Compétence 1 — Marketing</a></li>
-        <li><a href="competence2.html" class="nav__dropdown-item">Compétence 2 — Vente</a></li>
-        <li><a href="competence3.html" class="nav__dropdown-item">Compétence 3 — Communication</a></li>
-        <li><a href="competence4.html" class="nav__dropdown-item">Compétence 4 — Business Développement</a></li>
-        <li><a href="competence5.html" class="nav__dropdown-item">Compétence 5 — Relation Client</a></li>
+        <li><a href="competence1.html" class="nav__dropdown-item" data-i18n="nav_mob_comp1">Compétence 1 — Marketing</a></li>
+        <li><a href="competence2.html" class="nav__dropdown-item" data-i18n="nav_mob_comp2">Compétence 2 — Vente</a></li>
+        <li><a href="competence3.html" class="nav__dropdown-item" data-i18n="nav_mob_comp3">Compétence 3 — Communication</a></li>
+        <li><a href="competence4.html" class="nav__dropdown-item" data-i18n="nav_mob_comp4">Compétence 4 — Business Développement</a></li>
+        <li><a href="competence5.html" class="nav__dropdown-item" data-i18n="nav_mob_comp5">Compétence 5 — Relation Client</a></li>
       </ul>
-      <a href="contact.html" class="nav__link">Contact</a>
+      <a href="contact.html" class="nav__link" data-i18n="nav_contact">Contact</a>
     </div>
   </nav>
 
@@ -51,8 +56,8 @@
   <div class="page-hero">
     <div class="container">
       <span class="page-hero__eyebrow">Portfolio · Felipe Tecco</span>
-      <h1 class="page-hero__title">Mon Parcours</h1>
-      <p class="page-hero__subtitle">Un itinéraire entre deux continents, une reconversion assumée et une ambition commerciale construite sur le terrain.</p>
+      <h1 class="page-hero__title" data-i18n="profil_title">Mon Parcours</h1>
+      <p class="page-hero__subtitle" data-i18n="profil_hero_sub">Un itinéraire entre deux continents, une reconversion assumée et une ambition commerciale construite sur le terrain.</p>
     </div>
   </div>
 
@@ -66,103 +71,103 @@
 
           <ul class="profil-info-list">
             <li class="profil-info-item">
-              <span class="label">Formation</span>
-              <span class="value">BUT Techniques de Commercialisation</span>
+              <span class="label" data-i18n="profil_label_formation">Formation</span>
+              <span class="value" data-i18n="profil_val_formation">BUT Techniques de Commercialisation</span>
             </li>
             <li class="profil-info-item">
-              <span class="label">Établissement</span>
+              <span class="label" data-i18n="profil_label_etab">Établissement</span>
               <span class="value">IUT d'Évry Val d'Essonne</span>
             </li>
             <li class="profil-info-item">
-              <span class="label">Alternance</span>
+              <span class="label" data-i18n="profil_label_alternance">Alternance</span>
               <span class="value">Global Blue Tax Free</span>
             </li>
             <li class="profil-info-item">
-              <span class="label">Poste</span>
+              <span class="label" data-i18n="profil_label_poste">Poste</span>
               <span class="value">Account Manager Junior</span>
             </li>
             <li class="profil-info-item">
-              <span class="label">Nationalité</span>
-              <span class="value">Argentine</span>
+              <span class="label" data-i18n="profil_label_nationalite">Nationalité</span>
+              <span class="value" data-i18n="profil_val_nationalite">Argentine</span>
             </li>
             <li class="profil-info-item">
-              <span class="label">Contact</span>
-              <span class="value"><a href="contact.html" style="color:var(--color-bordeaux);">Formulaire de contact</a></span>
+              <span class="label" data-i18n="profil_label_contact">Contact</span>
+              <span class="value"><a href="contact.html" style="color:var(--color-bordeaux);" data-i18n="profil_val_contact">Formulaire de contact</a></span>
             </li>
           </ul>
         </aside>
 
         <!-- MAIN TEXT -->
         <div class="profil-main">
-          <span class="section-label">Mon histoire</span>
-          <h2>Une reconversion construite sur l'opportunité</h2>
+          <span class="section-label" data-i18n="profil_section_label">Mon histoire</span>
+          <h2 data-i18n="profil_h2_main">Une reconversion construite sur l'opportunité</h2>
 
-          <p>Je suis argentin, arrivé en France fin 2022. En Argentine, j'étudiais le droit. En France, j'ai saisi l'opportunité de me réorienter et j'ai choisi le BUT TC option Relation Client en alternance à l'IUT d'Évry, afin d'acquérir simultanément une expérience professionnelle et un diplôme reconnu.</p>
+          <p data-i18n="profil_p1">Je suis argentin, arrivé en France fin 2022. En Argentine, j'étudiais le droit. En France, j'ai saisi l'opportunité de me réorienter et j'ai choisi le BUT TC option Relation Client en alternance à l'IUT d'Évry, afin d'acquérir simultanément une expérience professionnelle et un diplôme reconnu.</p>
 
-          <p>Cette décision reflète ma capacité d'adaptation et ma volonté de construire un parcours commercial solide dans un environnement nouveau, en langue française, en intégrant rapidement les codes professionnels du secteur.</p>
+          <p data-i18n="profil_p2">Cette décision reflète ma capacité d'adaptation et ma volonté de construire un parcours commercial solide dans un environnement nouveau, en langue française, en intégrant rapidement les codes professionnels du secteur.</p>
 
-          <h2 style="margin-top:2.5rem;margin-bottom:1rem;">Mon alternance</h2>
+          <h2 style="margin-top:2.5rem;margin-bottom:1rem;" data-i18n="profil_h2_alternance">Mon alternance</h2>
 
-          <p>Mon alternance chez <strong>Global Blue Tax Free</strong> m'a permis d'exercer le rôle d'Account Manager Junior : gestion d'un portefeuille de clients, prospection commerciale, suivi des performances et développement des relations B2B. Cette expérience concrète constitue le fil rouge de ma montée en compétences commerciales.</p>
+          <p data-i18n-html="profil_p_alternance">Mon alternance chez <strong>Global Blue Tax Free</strong> m'a permis d'exercer le rôle d'Account Manager Junior : gestion d'un portefeuille de clients, prospection commerciale, suivi des performances et développement des relations B2B. Cette expérience concrète constitue le fil rouge de ma montée en compétences commerciales.</p>
 
           <!-- TIMELINE -->
           <div class="timeline">
-            <h2 class="timeline-title">Parcours</h2>
+            <h2 class="timeline-title" data-i18n="timeline_title">Parcours</h2>
 
             <div class="timeline__item">
               <span class="timeline__date">2023–2025</span>
               <div class="timeline__content">
-                <h3>BUT Techniques de Commercialisation</h3>
-                <p>IUT d'Évry — Formation en alternance, option Relation Client</p>
+                <h3 data-i18n="tl1_h3">BUT Techniques de Commercialisation</h3>
+                <p data-i18n="tl1_p">IUT d'Évry — Formation en alternance, option Relation Client</p>
               </div>
             </div>
 
             <div class="timeline__item">
               <span class="timeline__date">2023–2025</span>
               <div class="timeline__content">
-                <h3>Account Manager Junior</h3>
-                <p>Global Blue Tax Free — Gestion de portefeuille clients, prospection commerciale</p>
+                <h3 data-i18n="tl2_h3">Account Manager Junior</h3>
+                <p data-i18n="tl2_p">Global Blue Tax Free — Gestion de portefeuille clients, prospection commerciale</p>
               </div>
             </div>
 
             <div class="timeline__item">
               <span class="timeline__date">2022</span>
               <div class="timeline__content">
-                <h3>Arrivée en France</h3>
-                <p>Reconversion professionnelle · Choix du commerce et de la relation client</p>
+                <h3 data-i18n="tl3_h3">Arrivée en France</h3>
+                <p data-i18n="tl3_p">Reconversion professionnelle · Choix du commerce et de la relation client</p>
               </div>
             </div>
 
             <div class="timeline__item">
-              <span class="timeline__date">avant 2022</span>
+              <span class="timeline__date" data-i18n="tl4_date">avant 2022</span>
               <div class="timeline__content">
-                <h3>Études de droit</h3>
-                <p>Argentine — Formation juridique avant réorientation commerciale</p>
+                <h3 data-i18n="tl4_h3">Études de droit</h3>
+                <p data-i18n="tl4_p">Argentine — Formation juridique avant réorientation commerciale</p>
               </div>
             </div>
           </div>
 
           <!-- CENTRES D'INTERET -->
           <div style="margin-top:3.5rem;">
-            <span class="section-label">Centres d'intérêt</span>
-            <h2 style="margin-bottom:0.5rem;">Au-delà du commerce</h2>
-            <p style="color:var(--color-gray-text);margin-bottom:2rem;">Mes centres d'intérêt et passions</p>
+            <span class="section-label" data-i18n="interests_label">Centres d'intérêt</span>
+            <h2 style="margin-bottom:0.5rem;" data-i18n="interests_h2">Au-delà du commerce</h2>
+            <p style="color:var(--color-gray-text);margin-bottom:2rem;" data-i18n="interests_sub">Mes centres d'intérêt et passions</p>
 
             <div style="display:flex;flex-direction:column;gap:1.75rem;">
 
               <div>
-                <h3 style="font-family:var(--font-display);font-size:1.1rem;margin-bottom:0.4rem;">Entrepreneuriat Digital &amp; Écosystème Tech</h3>
-                <p>Passionné par la création de projets web et le lancement de Minimum Viable Products (MVP). J'aime transformer des idées en solutions concrètes et tester rapidement de nouveaux concepts sur le marché.</p>
+                <h3 style="font-family:var(--font-display);font-size:1.1rem;margin-bottom:0.4rem;" data-i18n="interest1_h3">Entrepreneuriat Digital &amp; Écosystème Tech</h3>
+                <p data-i18n="interest1_p">Passionné par la création de projets web et le lancement de Minimum Viable Products (MVP). J'aime transformer des idées en solutions concrètes et tester rapidement de nouveaux concepts sur le marché.</p>
               </div>
 
               <div>
-                <h3 style="font-family:var(--font-display);font-size:1.1rem;margin-bottom:0.4rem;">Développement Web &amp; Outils No-Code</h3>
-                <p>J'explore continuellement de nouveaux outils technologiques. Je conçois et déploie des landing pages et des sites vitrines (via GitHub, Vercel, ou des solutions no-code) pour optimiser la présence en ligne de différents projets.</p>
+                <h3 style="font-family:var(--font-display);font-size:1.1rem;margin-bottom:0.4rem;" data-i18n="interest2_h3">Développement Web &amp; Outils No-Code</h3>
+                <p data-i18n="interest2_p">J'explore continuellement de nouveaux outils technologiques. Je conçois et déploie des landing pages et des sites vitrines (via GitHub, Vercel, ou des solutions no-code) pour optimiser la présence en ligne de différents projets.</p>
               </div>
 
               <div>
-                <h3 style="font-family:var(--font-display);font-size:1.1rem;margin-bottom:0.4rem;">Social Media &amp; Création de Contenu</h3>
-                <p>Fasciné par les mécaniques de viralité, je gère des communautés en ligne et crée du contenu engageant. Cela me permet d'analyser concrètement les algorithmes et de comprendre ce qui capte l'attention d'une large audience.</p>
+                <h3 style="font-family:var(--font-display);font-size:1.1rem;margin-bottom:0.4rem;" data-i18n="interest3_h3">Social Media &amp; Création de Contenu</h3>
+                <p data-i18n="interest3_p">Fasciné par les mécaniques de viralité, je gère des communautés en ligne et crée du contenu engageant. Cela me permet d'analyser concrètement les algorithmes et de comprendre ce qui capte l'attention d'une large audience.</p>
               </div>
 
             </div>
@@ -178,15 +183,16 @@
     <div class="container">
       <div class="footer__inner">
         <span class="footer__name">Felipe Tecco</span>
-        <span class="footer__meta">BUT Techniques de Commercialisation · IUT d'Évry Val d'Essonne · 2024–2027</span>
+        <span class="footer__meta" data-i18n="footer_meta">BUT Techniques de Commercialisation · IUT d'Évry Val d'Essonne · 2024–2027</span>
         <div class="footer__links">
-          <a href="contact.html">Contact</a>
-          <a href="index.html">Accueil</a>
+          <a href="contact.html" data-i18n="footer_contact">Contact</a>
+          <a href="index.html" data-i18n="footer_home">Accueil</a>
         </div>
       </div>
     </div>
   </footer>
 
+  <script src="assets/i18n.js"></script>
   <script src="assets/main.js"></script>
 </body>
 </html>

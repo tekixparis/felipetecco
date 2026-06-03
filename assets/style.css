@@ -292,6 +292,43 @@ p {
   margin-top: 0.1rem;
 }
 
+
+/* Language switcher */
+.lang-switcher {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-left: 1.25rem;
+}
+
+.lang-btn {
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  color: var(--color-gray-text);
+  padding: 3px 7px;
+  border-radius: var(--radius);
+  transition: color var(--transition), background var(--transition);
+  text-transform: uppercase;
+}
+
+.lang-btn:hover {
+  color: var(--color-black);
+  background: var(--color-gray-mid);
+}
+
+.lang-btn.active {
+  color: var(--color-bordeaux);
+  background: rgba(123, 45, 62, 0.08);
+}
+
+@media (max-width: 900px) {
+  .lang-switcher {
+    margin-left: 0;
+    margin-right: auto;
+  }
+}
 /* Hamburger */
 .nav__hamburger {
   display: none;
