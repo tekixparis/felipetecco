@@ -169,6 +169,16 @@
   /* ----------------------------------------------------------
      INIT
      ---------------------------------------------------------- */
+  function initPageHeroAnimations() {
+    var ph = document.querySelector('.page-hero');
+    if (!ph) return;
+    requestAnimationFrame(function () {
+      requestAnimationFrame(function () {
+        ph.classList.add('page-hero--ready');
+      });
+    });
+  }
+
   function initHeroAnimations() {
     var hero = document.querySelector('.hero');
     if (!hero) return;
@@ -188,6 +198,7 @@
     initAccordions();
     initReveal();
     initHeroAnimations();
+    initPageHeroAnimations();
   });
 
 }());
