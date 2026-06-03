@@ -685,6 +685,17 @@ p {
   top: calc(var(--nav-height) + 2rem);
 }
 
+.intro-photo {
+  width: 100%;
+  max-width: 320px;
+  border-radius: 8px;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+  margin: 0 auto;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.10);
+}
+
 .profil-photo {
   width: 160px;
   height: 160px;
