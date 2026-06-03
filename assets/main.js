@@ -148,6 +148,25 @@
   }
 
   /* ----------------------------------------------------------
+     SCROLL REVEAL
+     ---------------------------------------------------------- */
+  function initReveal() {
+    var elements = $$('.reveal');
+    if (!elements.length) return;
+
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+
+    elements.forEach(function (el) { observer.observe(el); });
+  }
+
+  /* ----------------------------------------------------------
      INIT
      ---------------------------------------------------------- */
   document.addEventListener('DOMContentLoaded', function () {
@@ -155,6 +174,7 @@
     initDropdowns();
     initHamburger();
     initAccordions();
+    initReveal();
   });
 
 }());
