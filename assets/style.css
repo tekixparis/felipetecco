@@ -433,12 +433,16 @@ p {
   padding: 0.35rem 0.9rem;
   border: 1px solid rgba(123, 45, 62, 0.3);
   border-radius: 100px;
+  animation: heroFadeUp 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
+  animation-delay: 0.1s;
 }
 
 .hero__title {
   font-size: clamp(2.5rem, 7vw, var(--size-h1));
   margin-bottom: 1.25rem;
   color: var(--color-black);
+  animation: heroFadeUp 0.8s cubic-bezier(0.22, 1, 0.36, 1) both;
+  animation-delay: 0.28s;
 }
 
 .hero__subtitle {
@@ -448,6 +452,8 @@ p {
   color: var(--color-gray-text);
   margin-bottom: 0.75rem;
   max-width: none;
+  animation: heroFadeUp 0.8s cubic-bezier(0.22, 1, 0.36, 1) both;
+  animation-delay: 0.44s;
 }
 
 .hero__accroche {
@@ -457,6 +463,8 @@ p {
   color: var(--color-black);
   margin-bottom: 2.75rem;
   max-width: none;
+  animation: heroFadeUp 0.8s cubic-bezier(0.22, 1, 0.36, 1) both;
+  animation-delay: 0.56s;
 }
 
 .hero__cta-group {
@@ -464,6 +472,40 @@ p {
   gap: 1rem;
   justify-content: center;
   flex-wrap: wrap;
+  animation: heroFadeUp 0.8s cubic-bezier(0.22, 1, 0.36, 1) both;
+  animation-delay: 0.72s;
+}
+
+@keyframes heroFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero__title {
+  position: relative;
+  display: inline-block;
+}
+
+.hero__title-line {
+  display: block;
+  height: 3px;
+  background: var(--color-bordeaux);
+  border-radius: 2px;
+  margin-top: 0.35rem;
+  width: 0;
+  animation: heroLineExpand 0.7s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  animation-delay: 0.9s;
+}
+
+@keyframes heroLineExpand {
+  from { width: 0; }
+  to   { width: 100%; }
 }
 
 /* ------------------------------------------------------------
