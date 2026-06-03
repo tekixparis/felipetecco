@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Felipe Tecco — Portfolio BTS TC</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" role="navigation" aria-label="Navigation principale">
+    <div class="nav__inner">
+      <!-- PLACEHOLDER: Replace "Felipe Tecco" with actual display name if needed -->
+      <a href="index.html" class="nav__brand">Felipe <span>Tecco</span></a>
+      <ul class="nav__links">
+        <li><a href="index.html" class="nav__link">Accueil</a></li>
+        <li><a href="profil.html" class="nav__link">Mon Parcours</a></li>
+        <li class="nav__dropdown">
+          <span class="nav__dropdown-toggle" tabindex="0">Compétences <span class="chevron"></span></span>
+          <ul class="nav__dropdown-menu">
+            <li><a href="competence1.html" class="nav__dropdown-item">Compétence 1 <span class="item-sub">Marketing</span></a></li>
+            <li><a href="competence2.html" class="nav__dropdown-item">Compétence 2 <span class="item-sub">Vente</span></a></li>
+            <li><a href="competence3.html" class="nav__dropdown-item">Compétence 3 <span class="item-sub">Communication</span></a></li>
+            <li><a href="competence4.html" class="nav__dropdown-item">Compétence 4 <span class="item-sub">Business Développement</span></a></li>
+            <li><a href="competence5.html" class="nav__dropdown-item">Compétence 5 <span class="item-sub">Relation Client</span></a></li>
+          </ul>
+        </li>
+        <li><a href="contact.html" class="nav__link">Contact</a></li>
+      </ul>
+      <button class="nav__hamburger" aria-label="Ouvrir le menu"><span></span><span></span><span></span></button>
+    </div>
+    <div class="nav__mobile">
+      <a href="index.html" class="nav__link">Accueil</a>
+      <a href="profil.html" class="nav__link">Mon Parcours</a>
+      <span class="nav__dropdown-toggle">Compétences <span class="chevron"></span></span>
+      <ul class="nav__dropdown-menu">
+        <li><a href="competence1.html" class="nav__dropdown-item">Compétence 1 — Marketing</a></li>
+        <li><a href="competence2.html" class="nav__dropdown-item">Compétence 2 — Vente</a></li>
+        <li><a href="competence3.html" class="nav__dropdown-item">Compétence 3 — Communication</a></li>
+        <li><a href="competence4.html" class="nav__dropdown-item">Compétence 4 — Business Développement</a></li>
+        <li><a href="competence5.html" class="nav__dropdown-item">Compétence 5 — Relation Client</a></li>
+      </ul>
+      <a href="contact.html" class="nav__link">Contact</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero__inner">
+      <span class="hero__eyebrow">Portfolio · BTS TC</span>
+      <!-- PLACEHOLDER: Name displayed in hero -->
+      <h1 class="hero__title">Felipe Tecco</h1>
+      <p class="hero__subtitle">BTS Techniques de Commercialisation — 2ème année</p>
+      <p class="hero__accroche">Account Manager Junior · Global Blue Tax Free · IUT d'Évry</p>
+      <div class="hero__cta-group">
+        <a href="profil.html" class="btn btn--primary">Mon parcours</a>
+        <a href="competence1.html" class="btn btn--outline">Voir mes compétences</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTRO -->
+  <section class="section">
+    <div class="container">
+      <div class="intro-grid">
+        <div class="intro-text">
+          <span class="section-label">À propos</span>
+          <h2>Commerce, terrain&nbsp;et ambition internationale</h2>
+          <p>Étudiant argentin en BTS Techniques de Commercialisation à l'IUT d'Évry, je combine formation académique et expérience professionnelle en alternance chez <strong>Global Blue Tax Free</strong>, où j'exerce en tant qu'Account Manager Junior.</p>
+          <p>Ce portfolio présente l'ensemble des compétences développées au fil de mes projets académiques et de mon activité en entreprise : marketing, vente, communication, développement commercial et relation client.</p>
+          <div class="intro-stat-row">
+            <div class="intro-stat">
+              <h3>5</h3>
+              <p>Compétences<br>développées</p>
+            </div>
+            <div class="intro-stat">
+              <h3>2</h3>
+              <p>Années en<br>alternance</p>
+            </div>
+            <div class="intro-stat">
+              <h3>B2B</h3>
+              <p>Portefeuille<br>clients géré</p>
+            </div>
+          </div>
+        </div>
+        <div class="intro-visual">
+          <!-- PLACEHOLDER: Replace with a professional photo or illustration -->
+          <div style="text-align:center;color:var(--color-gray-text);">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="margin-bottom:.75rem;display:block;margin-left:auto;margin-right:auto;"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+            Photo professionnelle<br><small>à ajouter</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider" />
+
+  <!-- COMPETENCES STRIP -->
+  <section class="section section--gray">
+    <div class="container">
+      <span class="section-label">Compétences</span>
+      <h2 class="section-title">5 axes de formation</h2>
+      <p class="section-intro">Chaque compétence est illustrée par des projets académiques concrets et mon expérience en alternance.</p>
+      <div class="comp-strip">
+        <a href="competence1.html" class="comp-strip__item">
+          <span class="comp-strip__num">01</span>
+          <span class="comp-strip__title">Marketing</span>
+          <span class="comp-strip__sub">Construire une offre commerciale complexe</span>
+        </a>
+        <a href="competence2.html" class="comp-strip__item">
+          <span class="comp-strip__num">02</span>
+          <span class="comp-strip__title">Vente</span>
+          <span class="comp-strip__sub">Mener un entretien de vente</span>
+        </a>
+        <a href="competence3.html" class="comp-strip__item">
+          <span class="comp-strip__num">03</span>
+          <span class="comp-strip__title">Communication</span>
+          <span class="comp-strip__sub">Élaborer un plan de communication</span>
+        </a>
+        <a href="competence4.html" class="comp-strip__item">
+          <span class="comp-strip__num">04</span>
+          <span class="comp-strip__title">Business Dev.</span>
+          <span class="comp-strip__sub">Stratégie marketing et commerciale</span>
+        </a>
+        <a href="competence5.html" class="comp-strip__item">
+          <span class="comp-strip__num">05</span>
+          <span class="comp-strip__title">Relation Client</span>
+          <span class="comp-strip__sub">Manager la relation client</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <span class="footer__name">Felipe Tecco</span>
+        <span class="footer__meta">BTS Techniques de Commercialisation · IUT d'Évry · 2024–2025</span>
+        <div class="footer__links">
+          <a href="contact.html">Contact</a>
+          <a href="profil.html">Mon parcours</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/main.js"></script>
+</body>
+</html>
